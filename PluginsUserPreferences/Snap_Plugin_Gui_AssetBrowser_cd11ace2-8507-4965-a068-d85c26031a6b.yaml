@@ -1,5 +1,7 @@
 CollapsedEntities:
   type: stringset
   value:
-    size: 0
+    size: 1
+    values:
+      - REF_ONLY_SpectaclesHandGestures.js
   options: 4

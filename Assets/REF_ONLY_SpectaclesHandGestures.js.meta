@@ -1,0 +1,48 @@
+- !<AssetImportMetadata/3d0909cc-1840-4c7a-8b54-f9b15e9e364a>
+  ImportedAssetIds:
+    JavaScriptAsset: !<reference> c7233b11-8f1a-4ca4-b0f3-9f8074867f65
+  ImporterName: JavaScriptAssetImporter
+  PrimaryAsset: !<reference> c7233b11-8f1a-4ca4-b0f3-9f8074867f65
+  PackageType: NotAPackage
+  LegacyPackagePolicy: ~
+  ExtraData:
+    {}
+  AssetDataMap:
+    JavaScriptAsset: !<own> 3a93aa13-dc55-4e72-8188-a64ac16a5241
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<ScriptAssetData/3a93aa13-dc55-4e72-8188-a64ac16a5241>
+  SvgIcon: ""
+  SetupScript:
+    code: ""
+  Description: ""
+  VersionMajor: 0
+  VersionMinor: 0
+  VersionPatch: 0
+  ComponentUid: 33fb2260-a57a-4a54-931d-73ac811de9e4
+  ExportUid: 00000000-0000-0000-0000-000000000000
+  PackagePolicy: CanBeUnpacked
+  ScriptInputsHidden:
+    soundGrab: false
+    soundPinch: false
+    visualGrab: false
+    visualPinch: false
+  ScriptTypesHidden:
+    {}
+  ReadMe: !<reference> 00000000-0000-0000-0000-000000000000
+  DeclarationFile: !<reference> 00000000-0000-0000-0000-000000000000
+  Tags:
+    []
+  Attachments:
+    []
+  DefaultScriptInputs:
+    - soundPinch: !<reference.AudioComponent> 00000000-0000-0000-0000-000000000000
+      soundGrab: !<reference.AudioComponent> 00000000-0000-0000-0000-000000000000
+      visualPinch: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      visualGrab: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+  ScriptTypes:
+    -
+      {}
