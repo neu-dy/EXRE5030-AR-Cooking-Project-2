@@ -1,7 +1,18 @@
 CollapsedEntities:
   type: stringset
   value:
-    size: 1
+    size: 12
     values:
+      - Image 2.mat
+      - Image 3.mat
+      - Image 4.mat
+      - Image 5.mat
+      - Image 6.mat
+      - Image 7.mat
+      - Image.mat
+      - Image.png
+      - MenuController.js
       - REF_ONLY_SpectaclesHandGestures.js
+      - flat.ss_graph
+      - psgbl567345t.jpg
   options: 4
