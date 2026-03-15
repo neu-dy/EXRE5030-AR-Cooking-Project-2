@@ -1,7 +1,7 @@
 CollapsedEntities:
   type: stringset
   value:
-    size: 12
+    size: 14
     values:
       - Image 2.mat
       - Image 3.mat
@@ -13,6 +13,8 @@ CollapsedEntities:
       - Image.png
       - MenuController.js
       - REF_ONLY_SpectaclesHandGestures.js
+      - RecipeManager_ATTACH_THIS_TO_EACH_RECIPE_ASSET.js
+      - StepController_ATTACH_THIS_TO_EACH_STEP.js
       - flat.ss_graph
       - psgbl567345t.jpg
   options: 4
