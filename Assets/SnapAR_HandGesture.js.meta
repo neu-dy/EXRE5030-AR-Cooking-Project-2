@@ -1,0 +1,68 @@
+- !<AssetImportMetadata/8fdcbbbb-b249-4983-9eaf-ca4977d94243>
+  ImportedAssetIds:
+    JavaScriptAsset: !<reference> 8675a402-5c52-4170-af91-58d433855dcc
+  ImporterName: JavaScriptAssetImporter
+  PrimaryAsset: !<reference> 8675a402-5c52-4170-af91-58d433855dcc
+  PackageType: NotAPackage
+  LegacyPackagePolicy: ~
+  ExtraData:
+    {}
+  AssetDataMap:
+    JavaScriptAsset: !<own> fae9ee87-632b-4b91-a954-5df53703df55
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<ScriptAssetData/fae9ee87-632b-4b91-a954-5df53703df55>
+  SvgIcon: ""
+  SetupScript:
+    code: ""
+  Description: ""
+  VersionMajor: 0
+  VersionMinor: 0
+  VersionPatch: 0
+  ComponentUid: 52fea9b1-f311-4e45-be76-5dfa87f9af7f
+  ExportUid: 00000000-0000-0000-0000-000000000000
+  PackagePolicy: CanBeUnpacked
+  ScriptInputsHidden:
+    recipeManager: false
+    soundClose: false
+    soundHorns: false
+    soundIndex: false
+    soundOpen: false
+    soundThumb: false
+    soundVictory: false
+    tracker: false
+    visualClose: false
+    visualHorns: false
+    visualIndex: false
+    visualOpen: false
+    visualThumb: false
+    visualVictory: false
+  ScriptTypesHidden:
+    {}
+  ReadMe: !<reference> 00000000-0000-0000-0000-000000000000
+  DeclarationFile: !<reference> 00000000-0000-0000-0000-000000000000
+  Tags:
+    []
+  Attachments:
+    []
+  DefaultScriptInputs:
+    - tracker: !<reference.ObjectTracking> 00000000-0000-0000-0000-000000000000
+      recipeManager: !<reference.ScriptComponent> 00000000-0000-0000-0000-000000000000
+      soundOpen: !<reference.AudioComponent> 00000000-0000-0000-0000-000000000000
+      soundClose: !<reference.AudioComponent> 00000000-0000-0000-0000-000000000000
+      soundVictory: !<reference.AudioComponent> 00000000-0000-0000-0000-000000000000
+      soundIndex: !<reference.AudioComponent> 00000000-0000-0000-0000-000000000000
+      soundHorns: !<reference.AudioComponent> 00000000-0000-0000-0000-000000000000
+      soundThumb: !<reference.AudioComponent> 00000000-0000-0000-0000-000000000000
+      visualOpen: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      visualClose: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      visualVictory: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      visualIndex: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      visualHorns: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      visualThumb: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+  ScriptTypes:
+    -
+      {}

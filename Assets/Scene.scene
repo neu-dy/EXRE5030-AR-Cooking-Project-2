@@ -4,6 +4,7 @@
     - !<own> 00000000-0000-0065-0000-000000000064
     - !<own> 0005641c-028d-459a-0000-000000014b4d
     - !<own> 88d59e40-ed0f-4a14-8738-aae6e9f8ebd7
+    - !<own> a92f684d-9b13-44b3-8c30-d8d3372c9a81
   layers: !<Layers/267ee9a7-aff2-4f9d-9a49-f71214747d03>
     userLayers:
       []
@@ -850,6 +851,14 @@
     - !<own> d099cfd9-fef2-47b8-800e-e2f5fe0f62d8
   Components:
     - !<own> 4d395db4-4e80-40b9-84be-3f47939d71b1
+- !<ObjectTracking/83c52c8a-a316-4543-adce-1d6f123dd4eb>
+  PrefabRemaps:
+    []
+  Name: Object Tracking
+  Enabled: true
+  ObjectTrackingType: Hand
+  Model: !<reference> 00000000-0000-0000-0000-000000000000
+  AttachmentPoint: Center
 - !<Image/8563f4d2-82e2-44f0-97eb-9e3b46f89ad4>
   PrefabRemaps:
     []
@@ -885,6 +894,22 @@
   Components:
     - !<own> eb7e57eb-3442-468e-92f4-0f123c1ad6ba
     - !<own> c484d124-b0fe-43d2-8a44-a0b805fc7e4c
+    - !<own> 83c52c8a-a316-4543-adce-1d6f123dd4eb
+- !<SceneObject/95008e31-48d2-4882-adba-6b77ea89937a>
+  PrefabRemaps:
+    []
+  Name: SnapAR_HandGesture
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> d91d8edd-14ad-458d-b86f-5c60a8884161
 - !<Image/95994203-c838-4506-91d7-4dfc2888198a>
   PrefabRemaps:
     []
@@ -1068,6 +1093,21 @@
     CapitalizationOverride: None
   DepthTest: false
   TwoSided: false
+- !<SceneObject/a92f684d-9b13-44b3-8c30-d8d3372c9a81>
+  PrefabRemaps:
+    []
+  Name: Gesture Tracker
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    - !<own> 95008e31-48d2-4882-adba-6b77ea89937a
+  Components:
+    []
 - !<SceneObject/abb33fbe-6364-4757-8fb4-8b433b1fe253>
   PrefabRemaps:
     []
@@ -1246,6 +1286,47 @@
     []
   Components:
     - !<own> 1df5e1ff-46c0-42e8-86e4-1c20937ef99a
+- !<ScriptComponent/d91d8edd-14ad-458d-b86f-5c60a8884161>
+  PrefabRemaps:
+    []
+  Name: SnapAR_HandGesture
+  Enabled: true
+  ScriptAsset: !<reference> 8675a402-5c52-4170-af91-58d433855dcc
+  ScriptInputsDefault:
+    recipeManager: true
+    soundOpen: true
+    soundClose: true
+    soundVictory: true
+    soundIndex: true
+    soundHorns: true
+    soundThumb: true
+    visualOpen: true
+    visualClose: true
+    visualVictory: true
+    visualIndex: true
+    visualHorns: true
+    visualThumb: true
+  ScriptTypesDefault:
+    {}
+  ScriptInputs:
+    "":
+      tracker: !<reference.ObjectTracking> 83c52c8a-a316-4543-adce-1d6f123dd4eb
+      recipeManager: !<reference.ScriptComponent> 00000000-0000-0000-0000-000000000000
+      soundOpen: !<reference.AudioComponent> 00000000-0000-0000-0000-000000000000
+      soundClose: !<reference.AudioComponent> 00000000-0000-0000-0000-000000000000
+      soundVictory: !<reference.AudioComponent> 00000000-0000-0000-0000-000000000000
+      soundIndex: !<reference.AudioComponent> 00000000-0000-0000-0000-000000000000
+      soundHorns: !<reference.AudioComponent> 00000000-0000-0000-0000-000000000000
+      soundThumb: !<reference.AudioComponent> 00000000-0000-0000-0000-000000000000
+      visualOpen: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      visualClose: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      visualVictory: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      visualIndex: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      visualHorns: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      visualThumb: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+  ScriptTypes:
+    "":
+      {}
 - !<SceneObject/de525430-0cdb-4ab2-8544-d0b93abd4559>
   PrefabRemaps:
     []
