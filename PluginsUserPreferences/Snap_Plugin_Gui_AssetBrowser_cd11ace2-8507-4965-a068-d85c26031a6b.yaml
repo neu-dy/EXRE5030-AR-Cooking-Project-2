@@ -1,8 +1,25 @@
 CollapsedEntities:
   type: stringset
   value:
-    size: 12
+    size: 30
     values:
+      - 2D Hand Tracking Joints.lspkg
+      - 2D Hand Tracking Joints.lspkg/HandTrackingJoints__PUT_IN_ORTHO_CAM.prefab
+      - 2D Hand Tracking Joints.lspkg/Materials
+      - 2D Hand Tracking Joints.lspkg/Materials/index_finger_color.mat
+      - 2D Hand Tracking Joints.lspkg/Materials/mid_finger_color.mat
+      - 2D Hand Tracking Joints.lspkg/Materials/pinky_color.mat
+      - 2D Hand Tracking Joints.lspkg/Materials/ring_finger_color.mat
+      - 2D Hand Tracking Joints.lspkg/Materials/thumb_color.mat
+      - 2D Hand Tracking Joints.lspkg/Materials/wrist_color.mat
+      - 2D Hand Tracking Joints.lspkg/Shaders
+      - 2D Hand Tracking Joints.lspkg/Shaders/index_finger_color.ss_graph
+      - 2D Hand Tracking Joints.lspkg/Textures
+      - 2D Hand Tracking Joints.lspkg/Textures/circle_animation.t3d
+      - 2D Hand Tracking Joints.lspkg/Textures/circle_animation.t3d/atlas_0.jpg
+      - 2D Hand Tracking Joints.lspkg/Textures/circle_animation.t3d/circle_animation
+      - 2D Hand Tracking Joints.lspkg/package.native
+      - GestureController.js
       - Image 2.mat
       - Image 3.mat
       - Image 4.mat
@@ -12,6 +29,7 @@ CollapsedEntities:
       - Image.mat
       - Image.png
       - MenuController.js
+      - Modules/GestureRecognition.js
       - REF_ONLY_SpectaclesHandGestures.js
       - flat.ss_graph
       - psgbl567345t.jpg
