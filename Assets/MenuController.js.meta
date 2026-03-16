@@ -27,6 +27,7 @@
   PackagePolicy: CanBeUnpacked
   ScriptInputsHidden:
     backButton: false
+    mainMenu: false
     omeletteButton: false
     recipeButton: false
     recipeManagerOmelette: false
@@ -41,7 +42,8 @@
   Attachments:
     []
   DefaultScriptInputs:
-    - startGameButton: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+    - mainMenu: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      startGameButton: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
       recipeButton: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
       recipePanel: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
       backButton: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000

@@ -252,6 +252,7 @@
     {}
   ScriptInputs:
     "":
+      mainMenu: !<reference.SceneObject> f32d460f-0eea-442d-a034-9ae297b2a583
       startGameButton: !<reference.SceneObject> bafd38c1-d9a3-4b2f-ad6f-cfa124950093
       recipeButton: !<reference.SceneObject> abb33fbe-6364-4757-8fb4-8b433b1fe253
       recipePanel: !<reference.SceneObject> 5032cc5b-18d2-42f2-93fb-cd5cf75bf54a

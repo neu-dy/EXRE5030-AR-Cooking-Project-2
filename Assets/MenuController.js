@@ -1,3 +1,4 @@
+//@input SceneObject mainMenu
 //@input SceneObject startGameButton
 //@input SceneObject recipeButton
 //@input SceneObject recipePanel
@@ -45,10 +46,10 @@ function selectRecipe(recipeManagerObject, recipeName) {
         return;
     }
 
-    // Hide menu UI after selecting recipe
-    if (script.recipePanel) script.recipePanel.enabled = false;
-    if (script.startGameButton) script.startGameButton.enabled = false;
-    if (script.recipeButton) script.recipeButton.enabled = false;
+    // Disable the entire main menu so it doesn't block gameplay
+    if (script.mainMenu) {
+        script.mainMenu.enabled = false;
+    }
 }
 
 // Open recipe selection panel
@@ -80,9 +81,14 @@ if (omeletteInteraction) {
 if (startInteraction) {
     startInteraction.onTap.add(function () {
         print("Game Started!");
-        if (script.startGameButton) script.startGameButton.enabled = false;
-        if (script.recipeButton) script.recipeButton.enabled = false;
-        if (script.recipePanel) script.recipePanel.enabled = false;
+
+        if (script.mainMenu) {
+            script.mainMenu.enabled = false;
+        } else {
+            if (script.startGameButton) script.startGameButton.enabled = false;
+            if (script.recipeButton) script.recipeButton.enabled = false;
+            if (script.recipePanel) script.recipePanel.enabled = false;
+        }
     });
 }
 
