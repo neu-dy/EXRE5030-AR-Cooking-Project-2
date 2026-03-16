@@ -1,0 +1,53 @@
+- !<AssetImportMetadata/2074ff40-2d39-4f5f-b29e-34dfceec0744>
+  ImportedAssetIds:
+    JavaScriptAsset: !<reference> 67e341b6-6993-47dc-834e-7970a7e18e8a
+  ImporterName: JavaScriptAssetImporter
+  PrimaryAsset: !<reference> 67e341b6-6993-47dc-834e-7970a7e18e8a
+  PackageType: NotAPackage
+  LegacyPackagePolicy: ~
+  ExtraData:
+    {}
+  AssetDataMap:
+    JavaScriptAsset: !<own> 98d30a5a-543b-4bff-8106-02ca8af95b04
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<ScriptAssetData/98d30a5a-543b-4bff-8106-02ca8af95b04>
+  SvgIcon: ""
+  SetupScript:
+    code: ""
+  Description: ""
+  VersionMajor: 0
+  VersionMinor: 0
+  VersionPatch: 0
+  ComponentUid: c587ad92-05f0-489f-84e2-85a1bf3dd956
+  ExportUid: 00000000-0000-0000-0000-000000000000
+  PackagePolicy: CanBeUnpacked
+  ScriptInputsHidden:
+    progressBarImage: false
+    stepControllers: false
+    stepGoals: false
+    successSound: false
+    uiElements: false
+  ScriptTypesHidden:
+    {}
+  ReadMe: !<reference> 00000000-0000-0000-0000-000000000000
+  DeclarationFile: !<reference> 00000000-0000-0000-0000-000000000000
+  Tags:
+    []
+  Attachments:
+    []
+  DefaultScriptInputs:
+    - stepControllers: !<reference.ScriptComponent[]>
+        []
+      stepGoals: !<int[]>
+        []
+      uiElements: !<reference.SceneObject[]>
+        []
+      progressBarImage: !<reference.Image> 00000000-0000-0000-0000-000000000000
+      successSound: !<reference.AudioComponent> 00000000-0000-0000-0000-000000000000
+  ScriptTypes:
+    -
+      {}

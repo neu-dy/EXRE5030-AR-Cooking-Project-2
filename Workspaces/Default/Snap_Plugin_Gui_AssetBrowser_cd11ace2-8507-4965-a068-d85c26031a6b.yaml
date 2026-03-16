@@ -1,18 +1,38 @@
 CollapsedEntities:
   type: stringset
   value:
-    size: 12
+    size: 32
     values:
+      - 3D Hand Tracking Assets
+      - 3D Hand Tracking Assets/Hand Tracking Asset Left 2.handTracking3D
+      - 3D Hand Tracking Assets/Hand Tracking Asset Left 3.handTracking3D
+      - 3D Hand Tracking Assets/Hand Tracking Asset Left.handTracking3D
+      - 3D Hand Tracking Assets/Hand Tracking Asset Right 2.handTracking3D
+      - 3D Hand Tracking Assets/Hand Tracking Asset Right 3.handTracking3D
+      - 3D Hand Tracking Assets/Hand Tracking Asset Right.handTracking3D
+      - Cat SFX Pack.lspkg
+      - Cat SFX Pack.lspkg/Audio
+      - Cat SFX Pack.lspkg/Audio/cat_1.mp3
+      - Cat SFX Pack.lspkg/Audio/cat_2.mp3
+      - Cat SFX Pack.lspkg/Audio/cat_3.mp3
+      - Cat SFX Pack.lspkg/Audio/cat_4.mp3
+      - Cat SFX Pack.lspkg/CatSFX__PLACE_IN_SCENE.prefab
+      - Cat SFX Pack.lspkg/package.native
+      - Echopark.hdr
       - Image 2.mat
       - Image 3.mat
       - Image 4.mat
       - Image 5.mat
       - Image 6.mat
       - Image 7.mat
+      - Image 8.mat
       - Image.mat
       - Image.png
       - MenuController.js
       - REF_ONLY_SpectaclesHandGestures.js
+      - RecipeManager_ATTACH_THIS_TO_EACH_RECIPE_ASSET.js
+      - SnapAR_HandGesture.js
+      - StepController_ATTACH_THIS_TO_EACH_STEP.js
       - flat.ss_graph
       - psgbl567345t.jpg
   options: 4
