@@ -2,6 +2,7 @@
 //@input SceneObject recipeButton
 //@input SceneObject recipePanel
 //@input SceneObject backButton
+//@input SceneObject mainMenuRoot
 
 
 //@input SceneObject omeletteButton
@@ -43,9 +44,18 @@ function selectRecipe(recipeManagerObject, recipeName) {
         print("Recipe manager missing for: " + recipeName);
     }
 
+    //Hide the recipe panel
     script.recipePanel.enabled = false;
-    script.startGameButton.enabled = true;
-    script.recipeButton.enabled = true;
+
+    //Keep Main Menu BUTTON Hidden
+    script.startGameButton.enabled = false;
+    script.recipeButton.enabled = false;
+
+    //Hide the whole MENU CANVAS
+    // HIDE THE WHOLE MENU SCREEN
+    if (script.mainMenuRoot) {
+        script.mainMenuRoot.enabled = false;
+    }
 }
 
 if (recipeInteraction) {

@@ -27,6 +27,7 @@
   PackagePolicy: CanBeUnpacked
   ScriptInputsHidden:
     backButton: false
+    mainMenuRoot: false
     omeletteButton: false
     recipeButton: false
     recipeManagerOmelette: false
@@ -45,6 +46,7 @@
       recipeButton: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
       recipePanel: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
       backButton: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      mainMenuRoot: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
       omeletteButton: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
       recipeManagerOmelette: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
   ScriptTypes:
