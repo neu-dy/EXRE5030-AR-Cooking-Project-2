@@ -1,18 +1,34 @@
 CollapsedEntities:
   type: stringset
   value:
-    size: 12
+    size: 28
     values:
-      - Image 2.mat
-      - Image 3.mat
-      - Image 4.mat
-      - Image 5.mat
-      - Image 6.mat
-      - Image 7.mat
-      - Image.mat
-      - Image.png
-      - MenuController.js
+      - Device Camera Texture.deviceCameraTexture
+      - IMUnk.png
+      - IMmojito.png
+      - IMomelette.png
+      - IMtofustrew.png
+      - ImageMaterial.mat
+      - Liquid Glass UI Pack.lspkg/Examples/01_You may pack your icons.png
+      - Liquid Glass UI Pack.lspkg/Examples/02_Or use seperate files.png
+      - Liquid Glass UI Pack.lspkg/Examples/03_Icons can be updated in runtime.png
+      - Liquid Glass UI Pack.lspkg/Examples/04_Or use seperate files.png
+      - Liquid Glass UI Pack.lspkg/Examples/05_Icons can be updated in runtime.png
+      - Liquid Glass UI Pack.lspkg/Examples/06_Modify icon sets accordingly.png
+      - Liquid Glass UI Pack.lspkg/Examples/07_Use invisible texture to hide icons.png
+      - Liquid Glass UI Pack.lspkg/Examples/08_Gradient sample for slider.png
+      - Liquid Glass UI Pack.lspkg/Examples/09_Icons for horizontal menu.png
+      - Liquid Glass UI Pack.lspkg/Examples/10_Item list for vertical menu.png
+      - Liquid Glass UI Pack.lspkg/Examples/User Interaction Examples.ts
+      - Liquid Glass UI Pack.lspkg/Liqmo Basic Button.lsc
+      - Liquid Glass UI Pack.lspkg/Liqmo Morph Button.lsc
+      - Liquid Glass UI Pack.lspkg/Liqmo Selector.lsc
+      - Liquid Glass UI Pack.lspkg/_Liqmo Glass Examples.prefab
+      - Liquid Glass UI Pack.lspkg/package.native
       - REF_ONLY_SpectaclesHandGestures.js
-      - flat.ss_graph
-      - psgbl567345t.jpg
+      - Render Target.renderTarget
+      - Scene.scene
+      - UI Scroll View.lsc
+      - image_unlit.ss_graph
+      - startbtn.png
   options: 4
