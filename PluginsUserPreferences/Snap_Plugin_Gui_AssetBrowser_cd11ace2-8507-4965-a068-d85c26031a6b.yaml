@@ -1,14 +1,26 @@
 CollapsedEntities:
   type: stringset
   value:
-    size: 28
+    size: 41
     values:
+      - 3-2-1 Countdown.lspkg
+      - 3-2-1 Countdown.lspkg/Countdown321_PUT_IN_ORTHO_CAM__PUT_IN_ORTHO_CAM.prefab
+      - 3-2-1 Countdown.lspkg/Fonts
+      - 3-2-1 Countdown.lspkg/Fonts/jellee_roman.ttf
+      - 3-2-1 Countdown.lspkg/Scripts/CountdownController.js
+      - 3-2-1 Countdown.lspkg/Scripts/OnComplete_EDIT_ME.js
+      - 3-2-1 Countdown.lspkg/Scripts/README.js
+      - 3-2-1 Countdown.lspkg/package.native
+      - Countdown.lsc
       - Device Camera Texture.deviceCameraTexture
+      - Horizontal Layout.lsc
       - IMUnk.png
+      - IMdd.png
       - IMmojito.png
       - IMomelette.png
       - IMtofustrew.png
       - ImageMaterial.mat
+      - Layout Element.lsc
       - Liquid Glass UI Pack.lspkg/Examples/01_You may pack your icons.png
       - Liquid Glass UI Pack.lspkg/Examples/02_Or use seperate files.png
       - Liquid Glass UI Pack.lspkg/Examples/03_Icons can be updated in runtime.png
@@ -29,6 +41,7 @@ CollapsedEntities:
       - Render Target.renderTarget
       - Scene.scene
       - UI Scroll View.lsc
+      - Vertical Layout.lsc
       - image_unlit.ss_graph
       - startbtn.png
   options: 4

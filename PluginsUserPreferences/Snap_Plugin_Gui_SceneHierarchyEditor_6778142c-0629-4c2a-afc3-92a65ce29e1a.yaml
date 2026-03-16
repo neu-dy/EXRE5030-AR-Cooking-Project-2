@@ -1,32 +1,55 @@
 CollapsedEntities:
   type: stringset
   value:
-    size: 27
+    size: 50
     values:
+      - 0391ce5a-c5af-4436-a9cb-bf7b3d4126f2
       - 042e51ab-b5a1-44aa-b30c-57ef27f9fadb
+      - 06f3db8b-b6cf-4632-9fc8-860c9e4b31eb
       - 0be7755f-4cd5-4aec-81f9-1f2afd2d5621
       - 0e72b9c3-e994-414c-8ec6-e90d36397596
       - 14cc8555-05bf-435a-9840-f4379d6ef4ec
+      - 1c5c3b9f-9e35-4ed4-b0dd-c58f7749e02f
+      - 34b9e17a-42a0-40e9-be69-eb29712e84d3
+      - 363ba117-923b-4e1e-909c-7a9cb4ddcb57
       - 3664d526-7eba-4830-af9e-6f895bed31f2
-      - 3f121264-4760-43d4-8d02-c297c29eb035
+      - 3885224c-b310-4475-9ac5-f43da35ed1c0
+      - 45d9097b-fa3e-4640-a3e3-b4ff35d95a85
+      - 4ab7bbe3-9290-4ccf-93ed-71867cd48101
       - 4ebf77cf-1d34-4ed3-95ba-3a64e1196f3b
       - 5032cc5b-18d2-42f2-93fb-cd5cf75bf54a
       - 56766d80-676c-4ed6-b513-948fe07cf64c
+      - 5a77e91a-a37b-43c3-90dc-c12f95980795
       - 5ecf86d2-d2ad-4d7e-82df-b96d2b267e67
       - 64ed17e0-784c-46f0-8508-205d74102918
       - 65190c9d-9f2e-4aa2-9922-e2a93d2e0d32
       - 67bdcdd0-b841-4cb8-b65f-4418089bca05
+      - 6b786ce4-4eae-474b-80f0-1ec44c73d14b
+      - 83804bd7-21e2-40bc-bf82-80e66e3793c3
       - 8628a614-fa13-4c6b-83cb-0feb0e58437c
       - 900d0083-0562-4c5b-8cc4-3fb7abcbd056
       - 955d1278-a661-4ae4-b3d5-b87ba917a795
+      - 97777f3d-81b9-4ddd-862b-2891d7229a42
       - 9f6a4a71-5759-46d6-b504-aa5a032f8851
+      - ae82fc88-a75f-460c-9f72-09d5b06842a6
+      - af50fa23-381f-47f7-a2ac-4d8e42293672
+      - af8e7dfb-ebba-45f8-a70c-cbe8ee8e1fe8
       - b25cf69f-7333-4ff0-8b34-9a88c003fac1
       - b355b032-5dda-43f5-9f65-098eb4a64b44
+      - b37e1bea-ac5a-4041-b44b-9601cdee17d3
+      - b3ad46e9-5123-42d0-942f-d01675d0906d
+      - c1d72e76-6065-4022-b883-4c2696f08e76
       - c1d90d5c-2ea3-4909-89d1-a4be9291b315
+      - c522d32d-8a6c-4eac-b5f0-a26ef9a87733
+      - c7ff5fcd-9a48-4a24-9b60-ed537de422e4
+      - c827e4f4-43ca-4696-91e0-75e078cd1a60
       - cf52fdc0-b3ac-46dd-b143-cb26ef5b28a0
+      - d13175c0-5e88-4063-b8f3-23055c706935
       - d2ef723b-25f1-41ea-8bcf-0b9696399ed7
+      - d4210f34-4102-497f-a94e-2bd46eefd9a8
       - d76ead3d-1ed9-4974-911c-dac941df57e3
       - dcf02490-2818-48f3-925b-9b6ea915ce76
+      - e937566d-4faf-4fce-b224-c2fc0683cad8
       - f17e7507-cf36-40d0-afb3-5ba35d2d384a
       - fa61a15a-cd05-412f-a1a4-b81e2e74967d
       - fcf273d8-32a2-4d2c-85b6-a5395c099cfe

@@ -1,10 +1,15 @@
 data:
   externalSources:
+    - 07b2fa96-d6f3-40de-bbb8-137eacfa6277: "C:/Users/Zakira/AppData/Local/Snap/Lens Studio/LibraryComponents/Vertical Layout@5.1.0/Vertical Layout.lsc"
     - 1b5c95bf-020a-4bec-99ba-65c9f8dc98f0: "C:/Users/louis/Downloads/psgbl567345t.jpg"
+    - 2415c5ec-6ff1-4b14-843b-cf046a7e3492: "C:/Users/Zakira/AppData/Local/Snap/Lens Studio/LibraryComponents/Countdown@5.10.0/Countdown.lsc"
     - 2da0933f-3108-40c9-8e79-a9f240cbde37: "C:/Users/Zakira/AppData/Local/Snap/Lens Studio/LibraryComponents/UI Scroll View@4.0.0/UI Scroll View.lsc"
+    - 3689c937-eaf6-473e-94f9-6588af88ec66: "C:/Users/Zakira/AppData/Local/Snap/Lens Studio/LibraryComponents/Layout Element@5.1.0/Layout Element.lsc"
     - 3d0909cc-1840-4c7a-8b54-f9b15e9e364a: "C:/Program Files/Snap Inc/Lens Studio/JsPlugins/PresetsRegistry/Assets/Script/Resources/Untitled JavaScript.js"
+    - 43fe4e99-66cf-4faa-9996-d90110febe04: "C:/Users/Zakira/AppData/Local/Snap/Lens Studio/LibraryComponents/Horizontal Layout@5.1.0/Horizontal Layout.lsc"
     - 4413566a-a304-429f-9e40-eef914971b1c: "D:/Program Files/Snap Inc/Lens Studio/Plugins/Es_ShaderGraph_Model.bundle/InstantiationResources/image_unlit.ss_graph"
     - 622e23d6-2143-4d4b-9c52-8aafe4667265: "C:/Program Files/Snap Inc/Lens Studio/JsPlugins/PresetsRegistry/Assets/Resources/flat.ss_graph"
+    - 804fafe2-06ec-4b3c-8f48-ada04fbed28a: "D:/Study/NEU/SP26/5030/2/IMdd.png"
     - 93110689-d2b6-4952-b8f8-8af379380ec4: "D:/Study/NEU/SP26/5030/2/IMmojito.png"
     - c7412e44-d546-43be-9a3e-ece5f92a31d3: "C:/Program Files/Snap Inc/Lens Studio/JsPlugins/PresetsRegistry/Assets/ImageMaterial/Resources/Image.png"
     - d2327977-e397-4b84-a9e8-635159d3a770: "D:/Study/NEU/SP26/5030/2/IMUnk.png"

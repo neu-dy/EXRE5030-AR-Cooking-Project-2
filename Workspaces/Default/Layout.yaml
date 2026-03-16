@@ -6,8 +6,10 @@ dock:
           - items:
               - persistentName: Snap.Plugin.Markdown.Panel
                 Uuid: 6e761ad8-883b-49ab-965c-0f2dfd38dfc5
+              - persistentName: Com.Snap.LensBasedEditors
+                Uuid: 4af3967f-9324-40d1-ba72-a1d1c87bf084
             type: section
-            current: 0
+            current: 1
           - items:
               - items:
                   - persistentName: Snap.Plugin.Gui.AssetBrowser
@@ -25,8 +27,8 @@ dock:
             type: splitter
             orientation: horizontal
         sizes:
-          - 616
-          - 685
+          - 666
+          - 635
         type: splitter
         orientation: vertical
       - items:
@@ -43,8 +45,8 @@ dock:
             type: section
             current: 0
         sizes:
-          - 764
-          - 537
+          - 354
+          - 947
         type: splitter
         orientation: vertical
       - items:

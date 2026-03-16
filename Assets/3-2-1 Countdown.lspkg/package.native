@@ -1,0 +1,37 @@
+- !<NativePackageDescriptor/99510639-4b2a-46b6-96ac-2c56b6316836>
+  PackagePath: ""
+  StudioVersion:
+    major: 5
+    minor: 15
+    patch: 4
+    build: 26022322
+    type: Unset
+    buildFlavor: ""
+    timestamp: 0
+    commit: ""
+  Description: A 3-2-1 countdown that triggers a behavior on completion. Useful for interactions that require preparation. Learn more about the Text Component
+  SvgIcon: ""
+  SetupScript:
+    code: ""
+  VersionMajor: 1
+  VersionMinor: 0
+  VersionPatch: 0
+  UpdateCheckpoint: 76
+  ExportUid: 81cb552f-0ae1-4ed7-a45b-a5c52d5b6364
+  ComponentUid: 5b8b2d72-f97f-4a6a-ab5b-67a4a55e4aa7
+  PackagePolicy: CanBeUnpackedTransparent
+  ReadMe: !<reference> 00000000-0000-0000-0000-000000000000
+  Tags:
+    []
+  Attachments:
+    []
+  Instantiable: !<reference> 00000000-0000-0000-0000-000000000000
+  AssetLibraryDependencyStructure: !<AssetLibraryDependencyStructure>
+    Name: ""
+    AssetId: ""
+    Hash: ""
+    Version:
+      major: 0
+      minor: 0
+      patch: 0
+      build: 0
