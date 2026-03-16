@@ -9,6 +9,7 @@
     - !<own> 0f64fd91-3e9c-445c-b4db-d19951a74bef
     - !<own> 83fe75ba-8f09-4588-ba37-27ce2f27c56e
     - !<own> 594d72b5-52e3-4264-a65c-d3f4f49f9f6e
+    - !<own> 5da93036-68a6-4939-a402-de1b8f124eca
   layers: !<Layers/267ee9a7-aff2-4f9d-9a49-f71214747d03>
     userLayers:
       []
@@ -538,6 +539,33 @@
     CapitalizationOverride: None
   DepthTest: false
   TwoSided: false
+- !<ScriptComponent/20026fac-3c5a-4096-be07-6df438f95553>
+  PrefabRemaps:
+    []
+  Name: RecipeManager_ATTACH_THIS_TO_EACH_RECIPE_ASSET
+  Enabled: true
+  ScriptAsset: !<reference> 67e341b6-6993-47dc-834e-7970a7e18e8a
+  ScriptInputsDefault:
+    stepGoals: true
+    uiElements: true
+    progressBarImage: true
+    successSound: true
+  ScriptTypesDefault:
+    {}
+  ScriptInputs:
+    "":
+      stepControllers: !<reference.ScriptComponent[]>
+        - !<reference> 61e2530a-1c30-424d-bac0-d75e60a0fcfe
+        - !<reference> 6f52f219-efce-4891-9144-2fbe2e363133
+      stepGoals: !<int[]>
+        []
+      uiElements: !<reference.SceneObject[]>
+        []
+      progressBarImage: !<reference.Image> 00000000-0000-0000-0000-000000000000
+      successSound: !<reference.AudioComponent> 00000000-0000-0000-0000-000000000000
+  ScriptTypes:
+    "":
+      {}
 - !<ScreenRegionComponent/2064f186-5b0a-4d45-ad02-b45cb041670f>
   PrefabRemaps:
     []
@@ -854,6 +882,21 @@
     []
   Components:
     - !<own> 6f52f219-efce-4891-9144-2fbe2e363133
+- !<SceneObject/5da93036-68a6-4939-a402-de1b8f124eca>
+  PrefabRemaps:
+    []
+  Name: Object 0
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: 40.000000, y: 85.000000, z: 20.000000}
+    Rotation: {x: 69.999992, y: 9.999998, z: 150.000000}
+    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> 20026fac-3c5a-4096-be07-6df438f95553
 - !<ScriptComponent/61e2530a-1c30-424d-bac0-d75e60a0fcfe>
   PrefabRemaps:
     []
@@ -934,7 +977,7 @@
 - !<SceneObject/80e50109-0d41-4549-acf6-8c8e2b669f0f>
   PrefabRemaps:
     []
-  Name: RecipeButton
+  Name: RecipeButton1
   Enabled: true
   Layers: 1048576
   LocalTransform: !<TransformEntity>

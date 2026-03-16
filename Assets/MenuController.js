@@ -3,7 +3,6 @@
 //@input SceneObject recipePanel
 //@input SceneObject backButton
 
-
 //@input SceneObject omeletteButton
 //@input SceneObject recipeManagerOmelette
 
@@ -27,12 +26,14 @@ var recipeInteraction = getInteraction(script.recipeButton, "RecipeButton");
 var backInteraction = getInteraction(script.backButton, "BackButton");
 var omeletteInteraction = getInteraction(script.omeletteButton, "OmeletteButton");
 
-//add recipe to disable here
+// Disable all recipe managers here
 function disableAllRecipeManagers() {
-    if (script.recipeManagerOmelette) script.recipeManagerOmelette.enabled = false;
+    if (script.recipeManagerOmelette) {
+        script.recipeManagerOmelette.enabled = false;
+    }
 }
 
-//select the recipe
+// Select a recipe
 function selectRecipe(recipeManagerObject, recipeName) {
     disableAllRecipeManagers();
 
@@ -41,43 +42,49 @@ function selectRecipe(recipeManagerObject, recipeName) {
         print("Selected recipe: " + recipeName);
     } else {
         print("Recipe manager missing for: " + recipeName);
+        return;
     }
 
-    script.recipePanel.enabled = false;
-    script.startGameButton.enabled = true;
-    script.recipeButton.enabled = true;
+    // Hide menu UI after selecting recipe
+    if (script.recipePanel) script.recipePanel.enabled = false;
+    if (script.startGameButton) script.startGameButton.enabled = false;
+    if (script.recipeButton) script.recipeButton.enabled = false;
 }
 
+// Open recipe selection panel
 if (recipeInteraction) {
     recipeInteraction.onTap.add(function () {
-        script.recipePanel.enabled = true;
-        script.startGameButton.enabled = false;
-        script.recipeButton.enabled = false;
+        if (script.recipePanel) script.recipePanel.enabled = true;
+        if (script.startGameButton) script.startGameButton.enabled = false;
+        if (script.recipeButton) script.recipeButton.enabled = false;
     });
 }
 
+// Back from recipe panel to main menu
 if (backInteraction) {
     backInteraction.onTap.add(function () {
-        script.recipePanel.enabled = false;
-        script.startGameButton.enabled = true;
-        script.recipeButton.enabled = true;
+        if (script.recipePanel) script.recipePanel.enabled = false;
+        if (script.startGameButton) script.startGameButton.enabled = true;
+        if (script.recipeButton) script.recipeButton.enabled = true;
     });
 }
 
+// Select Omelette recipe
 if (omeletteInteraction) {
     omeletteInteraction.onTap.add(function () {
         selectRecipe(script.recipeManagerOmelette, "omelette");
     });
 }
 
-
+// Start game button
 if (startInteraction) {
     startInteraction.onTap.add(function () {
         print("Game Started!");
-        script.startGameButton.enabled = false;
-        script.recipeButton.enabled = false;
-        script.recipePanel.enabled = false;
+        if (script.startGameButton) script.startGameButton.enabled = false;
+        if (script.recipeButton) script.recipeButton.enabled = false;
+        if (script.recipePanel) script.recipePanel.enabled = false;
     });
 }
+
 // Start with all recipe managers disabled
 disableAllRecipeManagers();

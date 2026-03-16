@@ -82,4 +82,8 @@ function goToNextStep() {
     }
 }
 
-init();
+function startRecipe() {
+    init();
+}
+
+script.startRecipe = startRecipe;

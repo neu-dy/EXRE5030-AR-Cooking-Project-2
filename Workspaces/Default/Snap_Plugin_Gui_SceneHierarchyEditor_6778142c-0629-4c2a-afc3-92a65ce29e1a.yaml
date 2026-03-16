@@ -1,7 +1,7 @@
 CollapsedEntities:
   type: stringset
   value:
-    size: 18
+    size: 19
     values:
       - 033988f7-3bf2-4e8f-9293-de3f604759c0
       - 0f64fd91-3e9c-445c-b4db-d19951a74bef
@@ -16,6 +16,7 @@ CollapsedEntities:
       - 43cf91ef-d12a-47b8-9507-bcd3669e3229
       - 57bd15ae-1884-41b2-866f-a7ab52225ce9
       - 594d72b5-52e3-4264-a65c-d3f4f49f9f6e
+      - 5da93036-68a6-4939-a402-de1b8f124eca
       - 80e50109-0d41-4549-acf6-8c8e2b669f0f
       - 83fe75ba-8f09-4588-ba37-27ce2f27c56e
       - 95008e31-48d2-4882-adba-6b77ea89937a

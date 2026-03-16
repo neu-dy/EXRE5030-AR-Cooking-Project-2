@@ -14,8 +14,8 @@ dock:
             type: section
             current: 0
         sizes:
-          - 658
-          - 632
+          - 476
+          - 457
         type: splitter
         orientation: vertical
       - items:
@@ -24,18 +24,20 @@ dock:
                 Uuid: a14d85d7-9a15-42a6-913e-3f24dea267c2
               - persistentName: Snap.Plugin.AssistantAI.Panel
                 Uuid: df91b2cf-37e1-401c-83fc-3d9f83343e71
+              - persistentName: Snap.Plugin.Gui.ScriptEditor
+                Uuid: a2571bb5-c51f-4712-8ca2-a79e4069bd68
             type: section
-            current: 0
+            current: 2
           - items:
               - persistentName: Snap.Plugin.Gui.LoggerPanel
                 Uuid: 81de965d-0c94-4d28-82cf-901740003a1f
               - persistentName: Snap.Plugin.Gui.ScriptEditor
                 Uuid: 27ef1160-c95e-4f81-8958-a2b316331da6
             type: section
-            current: 1
+            current: 0
         sizes:
-          - 493
-          - 797
+          - 765
+          - 168
         type: splitter
         orientation: vertical
       - items:
@@ -49,9 +51,9 @@ dock:
         type: section
         current: 0
     sizes:
-      - 446
-      - 1056
-      - 423
-      - 616
+      - 334
+      - 622
+      - 328
+      - 619
     type: splitter
     orientation: horizontal
