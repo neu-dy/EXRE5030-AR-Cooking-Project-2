@@ -1772,7 +1772,7 @@
   PrefabRemaps:
     []
   Name: Screen_RecipeSelect
-  Enabled: true
+  Enabled: false
   Layers: 1048576
   LocalTransform: !<TransformEntity>
     Position: {x: 0.000000, y: 0.000000, z: 0.000000}
@@ -4957,7 +4957,7 @@
   PrefabRemaps:
     []
   Name: Menu-Vertical
-  Enabled: false
+  Enabled: true
   Layers: 1048576
   LocalTransform: !<TransformEntity>
     Position: {x: 0.000000, y: 0.000000, z: 0.000000}
@@ -5865,7 +5865,7 @@
   PrefabRemaps:
     []
   Name: LG_Selector
-  Enabled: false
+  Enabled: true
   Layers: 1048576
   LocalTransform: !<TransformEntity>
     Position: {x: 0.000000, y: 0.000000, z: 0.000000}

@@ -6,10 +6,8 @@ dock:
           - items:
               - persistentName: Snap.Plugin.Markdown.Panel
                 Uuid: 6e761ad8-883b-49ab-965c-0f2dfd38dfc5
-              - persistentName: Com.Snap.LensBasedEditors
-                Uuid: 98248ecb-734d-4ba4-a849-7da39faa7554
             type: section
-            current: 1
+            current: 0
           - items:
               - items:
                   - persistentName: Snap.Plugin.Gui.AssetBrowser
