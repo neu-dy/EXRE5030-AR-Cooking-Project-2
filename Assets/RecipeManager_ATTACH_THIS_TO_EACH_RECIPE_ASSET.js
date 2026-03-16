@@ -1,84 +1,134 @@
-// @input Component.ScriptComponent[] stepControllers // Array of StepController scripts
-// @input int[] stepGoals                             // Goals for each step (e.g., 5, 10, 3)
-// @input SceneObject[] uiElements                    // The UI instructions for each step
-// @input Component.Image progressBarImage             // The Image component for the progress bar
-// @input Component.AudioComponent successSound        // Sound played on step completion
+// @input Component.ScriptComponent[] stepControllers
+// @input int[] stepGoals
+// @input SceneObject[] uiElements
+// @input Component.Image progressBarImage
+// @input Component.AudioComponent successSound
 
 var currentStepIndex = 0;
-var updateEvent;
+var updateEvent = null;
+var hasStarted = false;
 
 function init() {
-    // 1. Initialize UI: Show only the first step's instruction 
-    for (var i = 0; i < script.uiElements.length; i++) {
-        if (script.uiElements[i]) script.uiElements[i].enabled = (i === 0);
+    currentStepIndex = 0;
+    hasStarted = true;
+
+    // disable old update event if this recipe was started before
+    if (updateEvent) {
+        updateEvent.enabled = false;
+        updateEvent = null;
     }
 
-    // 2. Start the very first step logic
+    // Initialize UI: Show only the first step's instruction
+    for (var i = 0; i < script.uiElements.length; i++) {
+        if (script.uiElements[i]) {
+            script.uiElements[i].enabled = (i === 0);
+        }
+    }
+
+    // Reset progress bar
+    if (script.progressBarImage) {
+        script.progressBarImage.mainPass.fill = 0;
+    }
+
+    // Validate arrays
+    if (!script.stepControllers || script.stepControllers.length === 0) {
+        print("RecipeManager: No stepControllers assigned.");
+        return;
+    }
+
+    if (!script.stepGoals || script.stepGoals.length < script.stepControllers.length) {
+        print("RecipeManager: stepGoals is missing values.");
+        return;
+    }
+
+    // Start the first step
     setupCurrentStep();
 
-    // 3. Create a frame-by-frame loop to check for gesture completion
-    // VOID UPDATE
+    // Create frame update loop
     updateEvent = script.createEvent("UpdateEvent");
     updateEvent.bind(onUpdate);
 }
 
-/**
- * Tells the current StepController to start watching for its specific goal.
- */
-// COMMUNICATE WITH STEPCONTROLLER ON THIS STEP'S ASSET > SET IT UP
-// BEGIN USING STEPCONTROLLER ATTACHED TO GAMECOMPONENT TO BEGIN PROGRESS
 function setupCurrentStep() {
-    if (currentStepIndex < script.stepControllers.length) {
-        var goal = script.stepGoals[currentStepIndex];
-        script.stepControllers[currentStepIndex].setupStep(goal);
+    if (currentStepIndex >= script.stepControllers.length) {
+        print("RecipeManager: currentStepIndex out of range.");
+        return;
     }
+
+    var controller = script.stepControllers[currentStepIndex];
+    var goal = script.stepGoals[currentStepIndex];
+
+    if (!controller) {
+        print("RecipeManager: Missing StepController at index " + currentStepIndex);
+        return;
+    }
+
+    print("RecipeManager: step " + currentStepIndex + ", setupStep type = " + typeof controller.setupStep);
+
+    if (typeof controller.setupStep !== "function") {
+        print("RecipeManager: setupStep is NOT a function at index " + currentStepIndex);
+        return;
+    }
+
+    controller.setupStep(goal);
 }
 
-/**
- * Runs every frame to update the Progress Bar and check if the step is finished.
- */
-// USE STEPCONTROLLER TO TRACK PROGRESS UNTIL COMPLETION
 function onUpdate() {
+    if (!hasStarted) return;
     if (currentStepIndex >= script.stepControllers.length) return;
 
     var currentController = script.stepControllers[currentStepIndex];
 
-    // Update the Progress Bar UI Fill
+    if (!currentController) {
+        print("RecipeManager: Missing StepController during update at index " + currentStepIndex);
+        return;
+    }
+
+    if (typeof currentController.getProgressRatio !== "function") {
+        print("RecipeManager: getProgressRatio is NOT a function at index " + currentStepIndex);
+        return;
+    }
+
+    if (typeof currentController.checkProgress !== "function") {
+        print("RecipeManager: checkProgress is NOT a function at index " + currentStepIndex);
+        return;
+    }
+
     if (script.progressBarImage) {
         var progress = currentController.getProgressRatio();
-        // Sets the 'fill' amount of the Image (requires Fill Mode enabled in Inspector)
         script.progressBarImage.mainPass.fill = progress;
     }
 
-    // Check if the StepController has reached the target delta
     if (currentController.checkProgress()) {
-        if (script.successSound) script.successSound.play(1);
+        if (script.successSound) {
+            script.successSound.play(1);
+        }
         goToNextStep();
     }
 }
 
-/**
- * Logic to transition to the next step or finish the recipe.
- */
-// CALL NEXT ASSET WITH STEPCONTROLLER ACCORDING TO SPECIFIED INPUT ORDER
 function goToNextStep() {
-    // Hide the current step's instruction UI
-    if (script.uiElements[currentStepIndex]) {
+    if (currentStepIndex < script.uiElements.length && script.uiElements[currentStepIndex]) {
         script.uiElements[currentStepIndex].enabled = false;
     }
 
     currentStepIndex++;
 
-    // If there are more steps, show the next UI and set up the next controller
     if (currentStepIndex < script.stepControllers.length) {
-        if (script.uiElements[currentStepIndex]) {
+        if (currentStepIndex < script.uiElements.length && script.uiElements[currentStepIndex]) {
             script.uiElements[currentStepIndex].enabled = true;
         }
+
+        if (script.progressBarImage) {
+            script.progressBarImage.mainPass.fill = 0;
+        }
+
         setupCurrentStep();
     } else {
-        // All steps finished
         print("Recipe Complete!");
-        updateEvent.enabled = false;
+        if (updateEvent) {
+            updateEvent.enabled = false;
+        }
     }
 }
 

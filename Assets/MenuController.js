@@ -39,7 +39,18 @@ function selectRecipe(recipeManagerObject, recipeName) {
     disableAllRecipeManagers();
 
     if (recipeManagerObject) {
+        // Enable the recipe manager object
         recipeManagerObject.enabled = true;
+
+        // Find its script and start the recipe
+        var recipeScript = recipeManagerObject.getComponent("Component.ScriptComponent");
+
+        if (recipeScript && recipeScript.startRecipe) {
+            recipeScript.startRecipe();
+        } else {
+            print("RecipeManager script missing startRecipe()");
+        }
+
         print("Selected recipe: " + recipeName);
     } else {
         print("Recipe manager missing for: " + recipeName);
