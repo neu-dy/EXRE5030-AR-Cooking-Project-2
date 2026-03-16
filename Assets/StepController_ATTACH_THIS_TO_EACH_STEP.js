@@ -11,7 +11,7 @@ var isStepComplete = false;
  * It captures the 'baseline' so we only count NEW gestures.
  */
 // TELL RECIPEMANAGER START COUNTING FROM NOW
-script.setupStep = function(goal) {
+script.api.setupStep = function(goal) {
     targetDelta = goal;
     // Capture the current count from the Gesture Check script as our starting point
     startingValue = script.gestureCheck[script.gestureVariableName] || 0;
@@ -24,7 +24,7 @@ script.setupStep = function(goal) {
  * Used by the RecipeManager to update the UI Bar.
  */
 // PROGRESS BAR UI FOR RECIPEMANAGER, IGNORE FOR NOW
-script.getProgressRatio = function() {
+script.api.getProgressRatio = function() {
     if (targetDelta <= 0) return 0;
     var currentTotal = script.gestureCheck[script.gestureVariableName] || 0;
     var currentDelta = currentTotal - startingValue;
@@ -39,7 +39,7 @@ script.getProgressRatio = function() {
  * The main check called every frame by the RecipeManager.
  */
 // VOID UPDATE IN UNITY EQUIVALENT
-script.checkProgress = function() {
+script.api.checkProgress = function() {
     if (!isStepActive || isStepComplete) return isStepComplete;
 
     // If our current progress ratio is 1 (100%), the step is done

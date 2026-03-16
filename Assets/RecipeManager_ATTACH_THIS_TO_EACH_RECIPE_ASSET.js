@@ -30,7 +30,7 @@ function init() {
 function setupCurrentStep() {
     if (currentStepIndex < script.stepControllers.length) {
         var goal = script.stepGoals[currentStepIndex];
-        script.stepControllers[currentStepIndex].setupStep(goal);
+        script.stepControllers[currentStepIndex].api.setupStep(goal);
     }
 }
 

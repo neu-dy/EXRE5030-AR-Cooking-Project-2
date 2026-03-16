@@ -32,7 +32,7 @@ dock:
               - persistentName: Snap.Plugin.Gui.ScriptEditor
                 Uuid: 27ef1160-c95e-4f81-8958-a2b316331da6
             type: section
-            current: 1
+            current: 0
         sizes:
           - 493
           - 797
