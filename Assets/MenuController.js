@@ -3,6 +3,10 @@
 //@input SceneObject recipePanel
 //@input SceneObject backButton
 
+
+//@input SceneObject omeletteButton
+//@input SceneObject recipeManagerOmelette
+
 function getInteraction(sceneObject, objectName) {
     if (!sceneObject) {
         print("Missing SceneObject input: " + objectName);
@@ -21,6 +25,28 @@ function getInteraction(sceneObject, objectName) {
 var startInteraction = getInteraction(script.startGameButton, "StartGameButton");
 var recipeInteraction = getInteraction(script.recipeButton, "RecipeButton");
 var backInteraction = getInteraction(script.backButton, "BackButton");
+var omeletteInteraction = getInteraction(script.omeletteButton, "OmeletteButton");
+
+//add recipe to disable here
+function disableAllRecipeManagers() {
+    if (script.recipeManagerOmelette) script.recipeManagerOmelette.enabled = false;
+}
+
+//select the recipe
+function selectRecipe(recipeManagerObject, recipeName) {
+    disableAllRecipeManagers();
+
+    if (recipeManagerObject) {
+        recipeManagerObject.enabled = true;
+        print("Selected recipe: " + recipeName);
+    } else {
+        print("Recipe manager missing for: " + recipeName);
+    }
+
+    script.recipePanel.enabled = false;
+    script.startGameButton.enabled = true;
+    script.recipeButton.enabled = true;
+}
 
 if (recipeInteraction) {
     recipeInteraction.onTap.add(function () {
@@ -38,6 +64,13 @@ if (backInteraction) {
     });
 }
 
+if (omeletteInteraction) {
+    omeletteInteraction.onTap.add(function () {
+        selectRecipe(script.recipeManagerOmelette, "omelette");
+    });
+}
+
+
 if (startInteraction) {
     startInteraction.onTap.add(function () {
         print("Game Started!");
@@ -46,3 +79,5 @@ if (startInteraction) {
         script.recipePanel.enabled = false;
     });
 }
+// Start with all recipe managers disabled
+disableAllRecipeManagers();

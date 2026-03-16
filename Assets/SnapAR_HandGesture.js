@@ -17,6 +17,9 @@
 
 print("Phone HandGesture loaded");
 
+script.hornsCount = 0;
+script.victoryCount = 0;
+
 var hideEvents = {};
 
 
@@ -111,8 +114,10 @@ if (!script.tracker) {
     // ----------------------------
     script.tracker.registerDescriptorStart("victory", function () {
         print("Victory detected");
+        script.victoryCount += 1;
+        print("victoryCount = " + script.victoryCount);
 
-        if (script.soundVictory) {
+        /*if (script.soundVictory) {
             script.soundVictory.play(1);
         }
 
@@ -120,7 +125,7 @@ if (!script.tracker) {
             showPopupTemporarily(script.visualVictory, 3);
         }
 
-        // notifyRecipeManager("victory");
+        // notifyRecipeManager("victory");*/
     });
 
 
@@ -148,7 +153,10 @@ if (!script.tracker) {
     script.tracker.registerDescriptorStart("horns", function () {
         print("Horns gesture detected");
 
-        if (script.soundHorns) {
+        script.hornsCountCount += 1;
+        print("hornsCount = " + script.hornsCount);
+
+        /*if (script.soundHorns) {
             script.soundHorns.play(1);
         }
 
@@ -156,7 +164,7 @@ if (!script.tracker) {
             showPopupTemporarily(script.visualHorns, 3);
         }
 
-        // notifyRecipeManager("horns");
+        // notifyRecipeManager("horns");*/
     });
 
 

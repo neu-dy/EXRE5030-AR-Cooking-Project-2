@@ -5,6 +5,10 @@
     - !<own> 0005641c-028d-459a-0000-000000014b4d
     - !<own> 88d59e40-ed0f-4a14-8738-aae6e9f8ebd7
     - !<own> a92f684d-9b13-44b3-8c30-d8d3372c9a81
+    - !<own> 033988f7-3bf2-4e8f-9293-de3f604759c0
+    - !<own> 0f64fd91-3e9c-445c-b4db-d19951a74bef
+    - !<own> 83fe75ba-8f09-4588-ba37-27ce2f27c56e
+    - !<own> 594d72b5-52e3-4264-a65c-d3f4f49f9f6e
   layers: !<Layers/267ee9a7-aff2-4f9d-9a49-f71214747d03>
     userLayers:
       []
@@ -171,6 +175,21 @@
   DecayType: None
   DecayLimit: false
   DecayRange: 40.000000
+- !<SceneObject/033988f7-3bf2-4e8f-9293-de3f604759c0>
+  PrefabRemaps:
+    []
+  Name: Hand Tracking
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> a0c86cea-0f38-4bfc-9d2b-253c7c2a6e73
 - !<Image/0b74a716-d86d-4d3d-854f-b8f8c49d8fd2>
   PrefabRemaps:
     []
@@ -190,6 +209,21 @@
   RotationAngle: 0
   Pivot: {x: 0.000000, y: 0.000000}
   ExtentsTarget: !<reference> 00000000-0000-0000-0000-000000000000
+- !<SceneObject/0f64fd91-3e9c-445c-b4db-d19951a74bef>
+  PrefabRemaps:
+    []
+  Name: Recipe_Omelette
+  Enabled: false
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> 8a84df3f-b9c2-4b1e-9fe1-990456933d9e
 - !<SceneObject/105f5147-2697-466a-95bc-23b721b8aa14>
   PrefabRemaps:
     []
@@ -221,6 +255,8 @@
       recipeButton: !<reference.SceneObject> abb33fbe-6364-4757-8fb4-8b433b1fe253
       recipePanel: !<reference.SceneObject> 5032cc5b-18d2-42f2-93fb-cd5cf75bf54a
       backButton: !<reference.SceneObject> 18966e2d-6874-443a-b8b6-18bb0b7b0cd3
+      omeletteButton: !<reference.SceneObject> 80e50109-0d41-4549-acf6-8c8e2b669f0f
+      recipeManagerOmelette: !<reference.SceneObject> 0f64fd91-3e9c-445c-b4db-d19951a74bef
   ScriptTypes:
     "":
       {}
@@ -739,6 +775,16 @@
     []
   Components:
     - !<own> 95994203-c838-4506-91d7-4dfc2888198a
+- !<InteractionComponent/45a8400a-04af-49ab-b929-e53c550d26d7>
+  PrefabRemaps:
+    []
+  Name: Interaction
+  Enabled: true
+  Camera: !<reference> 00000000-0000-0000-0000-000000000000
+  MinimumTouchSize: 0.000000
+  DepthFilter: true
+  MeshVisuals:
+    []
 - !<Image/4d395db4-4e80-40b9-84be-3f47939d71b1>
   PrefabRemaps:
     []
@@ -793,6 +839,38 @@
     []
   Components:
     - !<own> 4029953d-dae8-4a53-89ac-91d87692ab0e
+- !<SceneObject/594d72b5-52e3-4264-a65c-d3f4f49f9f6e>
+  PrefabRemaps:
+    []
+  Name: Gesture_Horn
+  Enabled: false
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> 6f52f219-efce-4891-9144-2fbe2e363133
+- !<ScriptComponent/61e2530a-1c30-424d-bac0-d75e60a0fcfe>
+  PrefabRemaps:
+    []
+  Name: StepController_ATTACH_THIS_TO_EACH_STEP
+  Enabled: true
+  ScriptAsset: !<reference> 3dbd038d-0536-4a61-96f0-c0dd69893abd
+  ScriptInputsDefault:
+    {}
+  ScriptTypesDefault:
+    {}
+  ScriptInputs:
+    "":
+      gestureCheck: !<reference.ScriptComponent> d91d8edd-14ad-458d-b86f-5c60a8884161
+      gestureVariableName: victoryCount
+  ScriptTypes:
+    "":
+      {}
 - !<InteractionComponent/65619413-b171-4111-9358-fb47e369ccc7>
   PrefabRemaps:
     []
@@ -803,6 +881,23 @@
   DepthFilter: true
   MeshVisuals:
     []
+- !<ScriptComponent/6f52f219-efce-4891-9144-2fbe2e363133>
+  PrefabRemaps:
+    []
+  Name: StepController_ATTACH_THIS_TO_EACH_STEP
+  Enabled: true
+  ScriptAsset: !<reference> 3dbd038d-0536-4a61-96f0-c0dd69893abd
+  ScriptInputsDefault:
+    {}
+  ScriptTypesDefault:
+    {}
+  ScriptInputs:
+    "":
+      gestureCheck: !<reference.ScriptComponent> d91d8edd-14ad-458d-b86f-5c60a8884161
+      gestureVariableName: hornsCount
+  ScriptTypes:
+    "":
+      {}
 - !<ScreenTransform/794ca93a-df72-4a2e-a6b1-52f5ec394f4f>
   PrefabRemaps:
     []
@@ -851,14 +946,22 @@
     - !<own> d099cfd9-fef2-47b8-800e-e2f5fe0f62d8
   Components:
     - !<own> 4d395db4-4e80-40b9-84be-3f47939d71b1
-- !<ObjectTracking/83c52c8a-a316-4543-adce-1d6f123dd4eb>
+    - !<own> 45a8400a-04af-49ab-b929-e53c550d26d7
+- !<SceneObject/83fe75ba-8f09-4588-ba37-27ce2f27c56e>
   PrefabRemaps:
     []
-  Name: Object Tracking
-  Enabled: true
-  ObjectTrackingType: Hand
-  Model: !<reference> 00000000-0000-0000-0000-000000000000
-  AttachmentPoint: Center
+  Name: Gesture_Victory
+  Enabled: false
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> 61e2530a-1c30-424d-bac0-d75e60a0fcfe
 - !<Image/8563f4d2-82e2-44f0-97eb-9e3b46f89ad4>
   PrefabRemaps:
     []
@@ -894,7 +997,33 @@
   Components:
     - !<own> eb7e57eb-3442-468e-92f4-0f123c1ad6ba
     - !<own> c484d124-b0fe-43d2-8a44-a0b805fc7e4c
-    - !<own> 83c52c8a-a316-4543-adce-1d6f123dd4eb
+- !<ScriptComponent/8a84df3f-b9c2-4b1e-9fe1-990456933d9e>
+  PrefabRemaps:
+    []
+  Name: RecipeManager_ATTACH_THIS_TO_EACH_RECIPE_ASSET
+  Enabled: true
+  ScriptAsset: !<reference> 67e341b6-6993-47dc-834e-7970a7e18e8a
+  ScriptInputsDefault:
+    uiElements: true
+    progressBarImage: true
+    successSound: true
+  ScriptTypesDefault:
+    {}
+  ScriptInputs:
+    "":
+      stepControllers: !<reference.ScriptComponent[]>
+        - !<reference> 61e2530a-1c30-424d-bac0-d75e60a0fcfe
+        - !<reference> 6f52f219-efce-4891-9144-2fbe2e363133
+      stepGoals: !<int[]>
+        - 3
+        - 4
+      uiElements: !<reference.SceneObject[]>
+        []
+      progressBarImage: !<reference.Image> 00000000-0000-0000-0000-000000000000
+      successSound: !<reference.AudioComponent> 00000000-0000-0000-0000-000000000000
+  ScriptTypes:
+    "":
+      {}
 - !<SceneObject/95008e31-48d2-4882-adba-6b77ea89937a>
   PrefabRemaps:
     []
@@ -1093,6 +1222,14 @@
     CapitalizationOverride: None
   DepthTest: false
   TwoSided: false
+- !<ObjectTracking/a0c86cea-0f38-4bfc-9d2b-253c7c2a6e73>
+  PrefabRemaps:
+    []
+  Name: Object Tracking
+  Enabled: true
+  ObjectTrackingType: Hand
+  Model: !<reference> 00000000-0000-0000-0000-000000000000
+  AttachmentPoint: Center
 - !<SceneObject/a92f684d-9b13-44b3-8c30-d8d3372c9a81>
   PrefabRemaps:
     []
@@ -1310,7 +1447,7 @@
     {}
   ScriptInputs:
     "":
-      tracker: !<reference.ObjectTracking> 83c52c8a-a316-4543-adce-1d6f123dd4eb
+      tracker: !<reference.ObjectTracking> a0c86cea-0f38-4bfc-9d2b-253c7c2a6e73
       recipeManager: !<reference.ScriptComponent> 00000000-0000-0000-0000-000000000000
       soundOpen: !<reference.AudioComponent> 00000000-0000-0000-0000-000000000000
       soundClose: !<reference.AudioComponent> 00000000-0000-0000-0000-000000000000
