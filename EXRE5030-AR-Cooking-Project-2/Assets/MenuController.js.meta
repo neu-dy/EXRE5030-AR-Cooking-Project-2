@@ -1,0 +1,48 @@
+- !<AssetImportMetadata/f3fac2ea-a174-436e-9cf0-bf393be1dec2>
+  ImportedAssetIds:
+    JavaScriptAsset: !<reference> c84b9955-7d39-484a-9e1d-b50286f328d9
+  ImporterName: JavaScriptAssetImporter
+  PrimaryAsset: !<reference> c84b9955-7d39-484a-9e1d-b50286f328d9
+  PackageType: NotAPackage
+  LegacyPackagePolicy: ~
+  ExtraData:
+    {}
+  AssetDataMap:
+    JavaScriptAsset: !<own> 9a6a8126-4133-4654-8457-d829293d2b77
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<ScriptAssetData/9a6a8126-4133-4654-8457-d829293d2b77>
+  SvgIcon: ""
+  SetupScript:
+    code: ""
+  Description: ""
+  VersionMajor: 0
+  VersionMinor: 0
+  VersionPatch: 0
+  ComponentUid: c010d093-d888-4ecb-a8dc-59a51d27aaeb
+  ExportUid: 00000000-0000-0000-0000-000000000000
+  PackagePolicy: CanBeUnpacked
+  ScriptInputsHidden:
+    backButton: false
+    recipeButton: false
+    recipePanel: false
+    startGameButton: false
+  ScriptTypesHidden:
+    {}
+  ReadMe: !<reference> 00000000-0000-0000-0000-000000000000
+  DeclarationFile: !<reference> 00000000-0000-0000-0000-000000000000
+  Tags:
+    []
+  Attachments:
+    []
+  DefaultScriptInputs:
+    - startGameButton: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      recipeButton: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      recipePanel: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      backButton: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+  ScriptTypes:
+    -
+      {}
