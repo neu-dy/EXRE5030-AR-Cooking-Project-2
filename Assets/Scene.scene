@@ -8084,7 +8084,7 @@
     - fe801b42-158b-4cde-b0ae-85529b6467a8: d7be2632-f0f0-499b-8b15-3aca6f0bb3d3
     - ff60f646-410c-4063-a65d-0b0cc52feb8f: 4abd95a3-d036-4019-8d59-9add8b3e8c2d
   Name: Screen_RecipeSelect
-  Enabled: true
+  Enabled: false
   Layers: 1048576
   LocalTransform: !<TransformEntity>
     Position: {x: 0.000000, y: 0.000000, z: 0.000000}
@@ -8306,7 +8306,7 @@
   PrefabRemaps:
     []
   Name: MainMenu
-  Enabled: false
+  Enabled: true
   Layers: 1048576
   LocalTransform: !<TransformEntity>
     Position: {x: 0.000000, y: 0.000000, z: 0.000000}
