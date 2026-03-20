@@ -680,7 +680,7 @@
   PrefabRemaps:
     []
   Name: Background
-  Enabled: true
+  Enabled: false
   Layers: 1048576
   LocalTransform: !<TransformEntity>
     Position: {x: 0.000000, y: 0.000000, z: 0.000000}
@@ -1181,6 +1181,13 @@
     []
   Components:
     - !<own> 6f52f219-efce-4891-9144-2fbe2e363133
+- !<ScreenRegionComponent/5bdb357e-51fd-4afa-b62a-c9da39265a55>
+  PrefabRemaps:
+    []
+  Name: Screen Region
+  Enabled: true
+  ScreenRegionType: FullFrame
+  ResizeWithKeyboard: false
 - !<AudioComponent/5ef3ff71-89fc-42aa-8f68-61d528ae07a0>
   PrefabRemaps:
     []
@@ -1418,6 +1425,7 @@
   Children:
     - !<own> f32d460f-0eea-442d-a034-9ae297b2a583
     - !<own> 2555c46a-5d35-4a17-9151-9a055ca5d817
+    - !<own> 97e5c266-b023-422a-95f7-1fde917d763a
   Components:
     - !<own> eb7e57eb-3442-468e-92f4-0f123c1ad6ba
     - !<own> c484d124-b0fe-43d2-8a44-a0b805fc7e4c
@@ -1564,6 +1572,22 @@
     CapitalizationOverride: None
   DepthTest: false
   TwoSided: false
+- !<SceneObject/97e5c266-b023-422a-95f7-1fde917d763a>
+  PrefabRemaps:
+    []
+  Name: Steps Animations
+  Enabled: true
+  Layers: 1048576
+  LocalTransform: !<TransformEntity>
+    Position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> a098c601-207b-4392-9ce2-62de7179cb8d
+    - !<own> 5bdb357e-51fd-4afa-b62a-c9da39265a55
 - !<Text/99901bdd-a6b1-442e-8d2a-b6db2a3edee6>
   PrefabRemaps:
     []
@@ -1645,6 +1669,39 @@
     CapitalizationOverride: None
   DepthTest: false
   TwoSided: false
+- !<ScreenTransform/a098c601-207b-4392-9ce2-62de7179cb8d>
+  PrefabRemaps:
+    []
+  Name: Screen Transform
+  Enabled: true
+  IsAdvanced: false
+  Constraints:
+    pinToLeft: false
+    pinToTop: false
+    pinToRight: false
+    pinToBottom: false
+    fixedWidth: false
+    fixedHeight: false
+    deactivatedFixedSprite: false
+    deactivatedFixedPivot: false
+  Pivot: {x: 0.000000, y: 0.000000}
+  Transform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  RawMode: true
+  ForceBasic: true
+  Anchor:
+    left: -1.000000
+    bottom: -1.000000
+    right: 1.000000
+    top: 1.000000
+  Offset:
+    left: 0.000000
+    bottom: 0.000000
+    right: 0.000000
+    top: 0.000000
 - !<ObjectTracking/a0c86cea-0f38-4bfc-9d2b-253c7c2a6e73>
   PrefabRemaps:
     []
