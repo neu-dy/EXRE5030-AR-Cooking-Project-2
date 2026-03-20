@@ -153,7 +153,7 @@ if (!script.tracker) {
     script.tracker.registerDescriptorStart("horns", function () {
         print("Horns gesture detected");
 
-        script.hornsCountCount += 1;
+        script.hornsCount += 1;
         print("hornsCount = " + script.hornsCount);
 
         /*if (script.soundHorns) {

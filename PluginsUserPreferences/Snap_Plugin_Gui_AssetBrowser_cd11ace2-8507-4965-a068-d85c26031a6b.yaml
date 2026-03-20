@@ -1,7 +1,7 @@
 CollapsedEntities:
   type: stringset
   value:
-    size: 32
+    size: 33
     values:
       - 3D Hand Tracking Assets
       - 3D Hand Tracking Assets/Hand Tracking Asset Left 2.handTracking3D
@@ -29,6 +29,7 @@ CollapsedEntities:
       - Image.mat
       - Image.png
       - MenuController.js
+      - MojitoRecipe.js
       - REF_ONLY_SpectaclesHandGestures.js
       - RecipeManager_ATTACH_THIS_TO_EACH_RECIPE_ASSET.js
       - SnapAR_HandGesture.js

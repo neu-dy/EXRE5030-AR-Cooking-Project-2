@@ -1,0 +1,50 @@
+- !<AssetImportMetadata/336c78b2-344d-44c7-b6a2-a28a21aa1a5f>
+  ImportedAssetIds:
+    JavaScriptAsset: !<reference> 338a1a01-1973-4a7b-badd-f1b2532891ba
+  ImporterName: JavaScriptAssetImporter
+  PrimaryAsset: !<reference> 338a1a01-1973-4a7b-badd-f1b2532891ba
+  PackageType: NotAPackage
+  LegacyPackagePolicy: ~
+  ExtraData:
+    {}
+  AssetDataMap:
+    JavaScriptAsset: !<own> eaeb1e4a-f21d-40c0-9bf0-efa8c2c5f539
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<ScriptAssetData/eaeb1e4a-f21d-40c0-9bf0-efa8c2c5f539>
+  SvgIcon: ""
+  SetupScript:
+    code: ""
+  Description: ""
+  VersionMajor: 0
+  VersionMinor: 0
+  VersionPatch: 0
+  ComponentUid: e196bfe8-88b3-4e13-9da7-1ba9e7a86bd1
+  ExportUid: 00000000-0000-0000-0000-000000000000
+  PackagePolicy: CanBeUnpacked
+  ScriptInputsHidden:
+    gestureLib: false
+    successSound: false
+    uiFinish: false
+    uiStep1: false
+    uiStep2: false
+  ScriptTypesHidden:
+    {}
+  ReadMe: !<reference> 00000000-0000-0000-0000-000000000000
+  DeclarationFile: !<reference> 00000000-0000-0000-0000-000000000000
+  Tags:
+    []
+  Attachments:
+    []
+  DefaultScriptInputs:
+    - gestureLib: !<reference.ScriptComponent> 00000000-0000-0000-0000-000000000000
+      uiStep1: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      uiStep2: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      uiFinish: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      successSound: !<reference.AudioComponent> 00000000-0000-0000-0000-000000000000
+  ScriptTypes:
+    -
+      {}

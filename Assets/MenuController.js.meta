@@ -26,13 +26,11 @@
   ExportUid: 00000000-0000-0000-0000-000000000000
   PackagePolicy: CanBeUnpacked
   ScriptInputsHidden:
-    backButton: false
-    mainMenuRoot: false
-    omeletteButton: false
-    recipeButton: false
-    recipeManagerOmelette: false
-    recipePanel: false
-    startGameButton: false
+    mojitoLogicObject: false
+    recipe01Button: false
+    recipeListScreen: false
+    startButton: false
+    startScreen: false
   ScriptTypesHidden:
     {}
   ReadMe: !<reference> 00000000-0000-0000-0000-000000000000
@@ -42,13 +40,11 @@
   Attachments:
     []
   DefaultScriptInputs:
-    - startGameButton: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
-      recipeButton: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
-      recipePanel: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
-      backButton: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
-      mainMenuRoot: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
-      omeletteButton: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
-      recipeManagerOmelette: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+    - startScreen: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      recipeListScreen: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      mojitoLogicObject: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      startButton: !<reference.InteractionComponent> 00000000-0000-0000-0000-000000000000
+      recipe01Button: !<reference.InteractionComponent> 00000000-0000-0000-0000-000000000000
   ScriptTypes:
     -
       {}
