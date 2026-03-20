@@ -1,17 +1,11 @@
 data:
   externalSources:
-    - 046d29e0-3173-4ade-bdda-b433f6c27d83: "C:/Users/Zakira/AppData/Local/Snap/Lens Studio/LibraryComponents/Falling3DObjects@1.0.10/Falling3DObjects.lsc"
     - 050e1975-444a-48ed-8b84-f62efd2a2a5c: "D:/Study/NEU/SP26/5030/2/EXRE5030-AR-Cooking-Project-2/Cache/6bfd6546-70a4-493b-9576-2993fe155dc0/71d5d75c50b460bb84b8c98aa0fcfa80/Data/IMtofustrew.png"
-    - 07b2fa96-d6f3-40de-bbb8-137eacfa6277: "C:/Users/Zakira/AppData/Local/Snap/Lens Studio/LibraryComponents/Vertical Layout@5.1.0/Vertical Layout.lsc"
     - 0d5083ba-321e-4b95-9a16-0446bf85fec0: "D:/Study/NEU/SP26/5030/2/EXRE5030-AR-Cooking-Project-2/Cache/6bfd6546-70a4-493b-9576-2993fe155dc0/71d5d75c50b460bb84b8c98aa0fcfa80/Data/memeAnimation.js"
-    - 18c350c5-dcf9-4440-91a6-f7bb0f66251b: "C:/Users/Zakira/AppData/Local/Snap/Lens Studio/LibraryComponents/MemeText@0.0.30/MemeText.lsc"
     - 1a92893a-9856-473d-ab5a-0ae3049d369e: "D:/Study/NEU/SP26/5030/2/EXRE5030-AR-Cooking-Project-2/Cache/6bfd6546-70a4-493b-9576-2993fe155dc0/71d5d75c50b460bb84b8c98aa0fcfa80/Data/IMUnk.png"
     - 1b5c95bf-020a-4bec-99ba-65c9f8dc98f0: "C:/Users/louis/Downloads/psgbl567345t.jpg"
-    - 2415c5ec-6ff1-4b14-843b-cf046a7e3492: "C:/Users/Zakira/AppData/Local/Snap/Lens Studio/LibraryComponents/Countdown@5.10.0/Countdown.lsc"
-    - 2da0933f-3108-40c9-8e79-a9f240cbde37: "C:/Users/Zakira/AppData/Local/Snap/Lens Studio/LibraryComponents/UI Scroll View@4.0.0/UI Scroll View.lsc"
-    - 3689c937-eaf6-473e-94f9-6588af88ec66: "C:/Users/Zakira/AppData/Local/Snap/Lens Studio/LibraryComponents/Layout Element@5.1.0/Layout Element.lsc"
     - 3d0909cc-1840-4c7a-8b54-f9b15e9e364a: "C:/Program Files/Snap Inc/Lens Studio/JsPlugins/PresetsRegistry/Assets/Script/Resources/Untitled JavaScript.js"
-    - 43fe4e99-66cf-4faa-9996-d90110febe04: "C:/Users/Zakira/AppData/Local/Snap/Lens Studio/LibraryComponents/Horizontal Layout@5.1.0/Horizontal Layout.lsc"
+    - 46e47082-e394-401e-b073-ce58e8648e23: "D:/Program Files/Snap Inc/Lens Studio/Plugins/Es_ShaderGraph_Model.bundle/InstantiationResources/image_unlit.ss_graph"
     - 622e23d6-2143-4d4b-9c52-8aafe4667265: "C:/Program Files/Snap Inc/Lens Studio/JsPlugins/PresetsRegistry/Assets/Resources/flat.ss_graph"
     - 6bfd6546-70a4-493b-9576-2993fe155dc0: "D:/Study/NEU/SP26/5030/2/UI.lspkg"
     - 6f6b9458-875f-4afe-932a-52edacaa99de: "D:/Study/NEU/SP26/5030/2/EXRE5030-AR-Cooking-Project-2/Cache/6bfd6546-70a4-493b-9576-2993fe155dc0/71d5d75c50b460bb84b8c98aa0fcfa80/Data/startbtn.png"
@@ -21,3 +15,4 @@ data:
     - d93a2623-f1f0-440c-b637-934aefa2b342: "D:/Study/NEU/SP26/5030/2/EXRE5030-AR-Cooking-Project-2/Cache/6bfd6546-70a4-493b-9576-2993fe155dc0/71d5d75c50b460bb84b8c98aa0fcfa80/Data/IMmojito.png"
     - e14bb187-e7e3-48b9-b9d7-45234d4fdb4d: "D:/Study/NEU/SP26/5030/2/EXRE5030-AR-Cooking-Project-2/Cache/6bfd6546-70a4-493b-9576-2993fe155dc0/71d5d75c50b460bb84b8c98aa0fcfa80/Data/IMomelette.png"
     - e79bf7c9-1796-4136-b997-f6368fec73b5: "D:/Study/NEU/SP26/5030/2/EXRE5030-AR-Cooking-Project-2/Cache/6bfd6546-70a4-493b-9576-2993fe155dc0/71d5d75c50b460bb84b8c98aa0fcfa80/Data/IMdd.png"
+    - f5022cff-7559-41bd-ab27-b6e8246ee59e: "D:/Study/NEU/SP26/5030/2/StepAnime-2.gif"

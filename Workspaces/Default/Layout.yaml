@@ -8,8 +8,10 @@ dock:
                 Uuid: 6e761ad8-883b-49ab-965c-0f2dfd38dfc5
               - persistentName: Com.Snap.LensBasedEditors
                 Uuid: dbb590e4-bf86-4790-8405-db439384ebc3
+              - persistentName: Com.Snap.LensBasedEditors
+                Uuid: 3345e00c-f23e-4d3c-9633-e415a42c4ecf
             type: section
-            current: 1
+            current: 2
           - items:
               - items:
                   - persistentName: Snap.Plugin.Gui.AssetBrowser
@@ -45,8 +47,8 @@ dock:
             type: section
             current: 0
         sizes:
-          - 919
-          - 382
+          - 653
+          - 648
         type: splitter
         orientation: vertical
       - items:
@@ -62,7 +64,7 @@ dock:
     sizes:
       - 657
       - 556
-      - 1089
-      - 241
+      - 770
+      - 560
     type: splitter
     orientation: horizontal
