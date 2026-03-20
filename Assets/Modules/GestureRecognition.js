@@ -1,6 +1,7 @@
 var GestureTypes = {
     CHOP: "chop",
-    STIR: "stir"
+    STIR: "stir",
+    SCOOP: "scoop"
 };
 
 var objectTracking = null;
@@ -16,6 +17,10 @@ var chopDownDetected = false;
 var chopDownThreshold = -0.05;
 var chopUpThreshold = 0.02;
 var chopCooldown = 0.5;
+
+var scoopUpDetected = false;
+var scoopUpThreshold = 0.05;
+var scoopCooldown = 0.5;
 
 var stirCenter = new vec2(0, 0);
 var stirStartTime = 0;
@@ -170,6 +175,31 @@ function update() {
                 }
             }
         }
+        if (targetGesture === GestureTypes.SCOOP) {
+            if (!scoopUpDetected && delta.y < scoopUpThreshold) {
+                scoopUpDetected = true;
+                print("[GestureRecognition] Scoop up detected");
+            }
+
+            // after moving down, require upward recovery before counting 1 scoop
+            if (scoopUpDetected && delta.y > scoopUpThreshold && (now - lastTriggerTime) > scoopCooldown) {
+                currentCount += 1;
+                lastTriggerTime = now;
+                scoopUpDetected = false;
+
+                print("[GestureRecognition] Scoop count: " + currentCount);
+
+                if (currentCount >= requiredCount) {
+                    isListening = false;
+                    print("[GestureRecognition] Gesture success: " + targetGesture);
+
+                    if (global.onGestureSuccess) {
+                        global.onGestureSuccess(targetGesture);
+                    }
+                }
+            }
+        }
+
     }
     lastPosition = pos;
 }

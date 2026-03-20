@@ -38,7 +38,7 @@ script.createEvent("OnStartEvent").bind(function () {
         print("[GestureController] Ready. Starting test gesture detection...");
     }
 
-    GestureRecognition.startListening(GestureTypes.STIR, 4);
+    GestureRecognition.startListening(GestureTypes.SCOOP, 4);
 });
 
 // Update every frame
