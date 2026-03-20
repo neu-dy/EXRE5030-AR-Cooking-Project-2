@@ -1,0 +1,181 @@
+- !<AssetImportMetadata/4a704993-cbe7-4449-8195-3ff14ebba450>
+  ImportedAssetIds:
+    ObjectPrefab: !<reference> 0594d056-d458-45fd-a4d2-930493c8cacf
+  ImporterName: ObjectPrefabImporter
+  PrimaryAsset: !<reference> 0594d056-d458-45fd-a4d2-930493c8cacf
+  PackageType: NotAPackage
+  LegacyPackagePolicy: ~
+  ExtraData:
+    {}
+  AssetDataMap:
+    ObjectPrefab: !<own> a7e521d5-77d4-4d40-82a2-c6e0a11b1571
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<SceneObject/736ecf94-57da-4c8a-a6e1-737dcc7fb019>
+  PrefabRemaps:
+    []
+  Name: memetext
+  Enabled: false
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    - !<own> f2829ce9-5e78-40b2-97f7-3b83ec6064d0
+    - !<own> c559dd1a-624f-4412-a9fa-dc6c2147a48f
+  Components:
+    - !<own> f513abe2-3e5c-4d69-a016-28dceeab3e50
+    - !<own> dcb458b7-2e19-4cde-9807-810ad174ecd3
+- !<ScreenTransform/7e48952a-cd6a-4ea4-af84-3d1f9fa6de35>
+  PrefabRemaps:
+    []
+  Name: Screen Transform
+  Enabled: true
+  IsAdvanced: false
+  Constraints:
+    pinToLeft: false
+    pinToTop: false
+    pinToRight: false
+    pinToBottom: false
+    fixedWidth: false
+    fixedHeight: true
+    deactivatedFixedSprite: false
+    deactivatedFixedPivot: false
+  Pivot: {x: 0.000000, y: 0.000000}
+  Transform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  RawMode: true
+  ForceBasic: true
+  Anchor:
+    left: -1.000000
+    bottom: -0.600000
+    right: 1.000000
+    top: -0.600000
+  Offset:
+    left: 0.000000
+    bottom: -196.959290
+    right: 0.000000
+    top: 72.839165
+- !<ObjectPrefabAssetData/a7e521d5-77d4-4d40-82a2-c6e0a11b1571>
+  Prototype: !<ObjectOwner/8850bdfb-06fa-46ff-bbd7-713e132deaba>
+    PackagePath: ""
+    objects:
+      - !<own> 736ecf94-57da-4c8a-a6e1-737dcc7fb019
+- !<ScriptComponent/bc1ef6c2-448f-42e3-b82f-ba9fb54f722c>
+  PrefabRemaps:
+    []
+  Name: MemeText
+  Enabled: true
+  ScriptAsset: !<reference> 30a93e04-3398-4d0d-8829-fc4d9509902d
+  ScriptInputsDefault:
+    top: true
+    rotation: true
+  ScriptTypesDefault:
+    {}
+  ScriptInputs:
+    "":
+      text: Yay!!
+      color: !<Vec4> {x: 1.000000, y: 0.513726, z: 0.164706, w: 1.000000}
+      left: 0.060000
+      top: !<float> 0.000000
+      rotation: !<float> 0.000000
+  ScriptTypes:
+    "":
+      {}
+- !<SceneObject/c559dd1a-624f-4412-a9fa-dc6c2147a48f>
+  PrefabRemaps:
+    []
+  Name: memeAnimation
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> f96a10f6-76d1-43a7-96d1-6e79d5355f52
+- !<ScreenTransform/dcb458b7-2e19-4cde-9807-810ad174ecd3>
+  PrefabRemaps:
+    []
+  Name: Screen Transform
+  Enabled: true
+  IsAdvanced: false
+  Constraints:
+    pinToLeft: false
+    pinToTop: false
+    pinToRight: false
+    pinToBottom: false
+    fixedWidth: false
+    fixedHeight: false
+    deactivatedFixedSprite: false
+    deactivatedFixedPivot: false
+  Pivot: {x: 0.000000, y: 0.000000}
+  Transform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  RawMode: true
+  ForceBasic: true
+  Anchor:
+    left: -1.000000
+    bottom: -0.570000
+    right: 1.000000
+    top: 0.850000
+  Offset:
+    left: 0.000000
+    bottom: 0.000000
+    right: 0.000000
+    top: 0.000000
+- !<SceneObject/f2829ce9-5e78-40b2-97f7-3b83ec6064d0>
+  PrefabRemaps:
+    []
+  Name: Yay
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> bc1ef6c2-448f-42e3-b82f-ba9fb54f722c
+    - !<own> 7e48952a-cd6a-4ea4-af84-3d1f9fa6de35
+- !<ScreenRegionComponent/f513abe2-3e5c-4d69-a016-28dceeab3e50>
+  PrefabRemaps:
+    []
+  Name: Screen Region
+  Enabled: true
+  ScreenRegionType: SafeRender
+  ResizeWithKeyboard: false
+- !<ScriptComponent/f96a10f6-76d1-43a7-96d1-6e79d5355f52>
+  PrefabRemaps:
+    []
+  Name: memeAnimation
+  Enabled: true
+  ScriptAsset: !<reference> b773f44c-c183-4c21-83b9-59e0925fb8bb
+  ScriptInputsDefault:
+    scalePeak: true
+  ScriptTypesDefault:
+    {}
+  ScriptInputs:
+    "":
+      yayObject: !<reference.SceneObject> f2829ce9-5e78-40b2-97f7-3b83ec6064d0
+      displayDuration: 1.270000
+      scalePeak: 1.400000
+  ScriptTypes:
+    "":
+      {}

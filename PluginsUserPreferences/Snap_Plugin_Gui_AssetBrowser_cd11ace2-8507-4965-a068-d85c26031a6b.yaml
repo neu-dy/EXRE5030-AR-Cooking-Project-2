@@ -1,38 +1,87 @@
 CollapsedEntities:
   type: stringset
   value:
-    size: 32
+    size: 81
     values:
       - 3D Hand Tracking Assets
-      - 3D Hand Tracking Assets/Hand Tracking Asset Left 2.handTracking3D
-      - 3D Hand Tracking Assets/Hand Tracking Asset Left 3.handTracking3D
-      - 3D Hand Tracking Assets/Hand Tracking Asset Left.handTracking3D
-      - 3D Hand Tracking Assets/Hand Tracking Asset Right 2.handTracking3D
-      - 3D Hand Tracking Assets/Hand Tracking Asset Right 3.handTracking3D
-      - 3D Hand Tracking Assets/Hand Tracking Asset Right.handTracking3D
       - Cat SFX Pack.lspkg
       - Cat SFX Pack.lspkg/Audio
-      - Cat SFX Pack.lspkg/Audio/cat_1.mp3
-      - Cat SFX Pack.lspkg/Audio/cat_2.mp3
-      - Cat SFX Pack.lspkg/Audio/cat_3.mp3
-      - Cat SFX Pack.lspkg/Audio/cat_4.mp3
-      - Cat SFX Pack.lspkg/CatSFX__PLACE_IN_SCENE.prefab
-      - Cat SFX Pack.lspkg/package.native
+      - Countdown.lsc
+      - Countdown321_PUT_IN_ORTHO_CAM 2.prefab
+      - Device Camera Texture.deviceCameraTexture
       - Echopark.hdr
+      - Echopark.hdr/Diffuse
+      - Echopark.hdr/Specular
+      - Falling3DObjects.lsc
+      - Horizontal Layout.lsc
+      - IMUnk.png
+      - IMdd.png
+      - IMmojito.png
+      - IMomelette.png
+      - IMtofustrew.png
       - Image 2.mat
       - Image 3.mat
       - Image 4.mat
       - Image 5.mat
       - Image 6.mat
       - Image 7.mat
-      - Image 8.mat
       - Image.mat
       - Image.png
-      - MenuController.js
+      - Layout Element.lsc
+      - Liqmo Glass Examples.prefab
+      - MemeText.lsc
       - REF_ONLY_SpectaclesHandGestures.js
       - RecipeManager_ATTACH_THIS_TO_EACH_RECIPE_ASSET.js
+      - Render Target.renderTarget
+      - Scene.scene
+      - Screen_Cooking.prefab
+      - Screen_RecipeSelect.prefab
       - SnapAR_HandGesture.js
       - StepController_ATTACH_THIS_TO_EACH_STEP.js
+      - UI Scroll View.lsc
+      - UI.lspkg
+      - UI.lspkg/3-2-1 Countdown.lspkg
+      - UI.lspkg/3-2-1 Countdown.lspkg/Fonts
+      - UI.lspkg/3-2-1 Countdown.lspkg/Fonts/jellee_roman.ttf
+      - UI.lspkg/3-2-1 Countdown.lspkg/Scripts
+      - UI.lspkg/3-2-1 Countdown.lspkg/Scripts/CountdownController.js
+      - UI.lspkg/3-2-1 Countdown.lspkg/Scripts/OnComplete_EDIT_ME.js
+      - UI.lspkg/3-2-1 Countdown.lspkg/Scripts/README.js
+      - UI.lspkg/Countdown321_PUT_IN_ORTHO_CAM 2.prefab
+      - UI.lspkg/IMUnk.png
+      - UI.lspkg/IMdd.png
+      - UI.lspkg/IMmojito.png
+      - UI.lspkg/IMomelette.png
+      - UI.lspkg/IMtofustrew.png
+      - UI.lspkg/Liqmo Glass Examples.prefab
+      - UI.lspkg/Liquid Glass UI Pack.lspkg
+      - UI.lspkg/Liquid Glass UI Pack.lspkg/Examples
+      - UI.lspkg/Liquid Glass UI Pack.lspkg/Examples/01_You may pack your icons.png
+      - UI.lspkg/Liquid Glass UI Pack.lspkg/Examples/02_Or use seperate files.png
+      - UI.lspkg/Liquid Glass UI Pack.lspkg/Examples/03_Icons can be updated in runtime.png
+      - UI.lspkg/Liquid Glass UI Pack.lspkg/Examples/04_Or use seperate files.png
+      - UI.lspkg/Liquid Glass UI Pack.lspkg/Examples/05_Icons can be updated in runtime.png
+      - UI.lspkg/Liquid Glass UI Pack.lspkg/Examples/06_Modify icon sets accordingly.png
+      - UI.lspkg/Liquid Glass UI Pack.lspkg/Examples/07_Use invisible texture to hide icons.png
+      - UI.lspkg/Liquid Glass UI Pack.lspkg/Examples/08_Gradient sample for slider.png
+      - UI.lspkg/Liquid Glass UI Pack.lspkg/Examples/09_Icons for horizontal menu.png
+      - UI.lspkg/Liquid Glass UI Pack.lspkg/Examples/10_Item list for vertical menu.png
+      - UI.lspkg/Liquid Glass UI Pack.lspkg/Examples/User Interaction Examples.ts
+      - UI.lspkg/Liquid Glass UI Pack.lspkg/Liqmo Basic Button.lsc
+      - UI.lspkg/Liquid Glass UI Pack.lspkg/Liqmo Morph Button.lsc
+      - UI.lspkg/Liquid Glass UI Pack.lspkg/Liqmo Selector.lsc
+      - UI.lspkg/MemeText.lsc
+      - UI.lspkg/Screen_Cooking.prefab
+      - UI.lspkg/Screen_RecipeSelect.prefab
+      - UI.lspkg/UI Scroll View.lsc
+      - UI.lspkg/memeAnimation.js
+      - UI.lspkg/memetext.prefab
+      - UI.lspkg/package.native
+      - UI.lspkg/startbtn.png
+      - Vertical Layout.lsc
       - flat.ss_graph
+      - memeAnimation.js
+      - memetext.prefab
       - psgbl567345t.jpg
+      - startbtn.png
   options: 4
