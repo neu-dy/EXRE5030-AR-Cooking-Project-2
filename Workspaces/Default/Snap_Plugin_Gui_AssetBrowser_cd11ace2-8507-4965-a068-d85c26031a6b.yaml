@@ -1,7 +1,7 @@
 CollapsedEntities:
   type: stringset
   value:
-    size: 80
+    size: 92
     values:
       - 3D Hand Tracking Assets
       - Cat SFX Pack.lspkg
@@ -25,6 +25,14 @@ CollapsedEntities:
       - Image 7.mat
       - Image.mat
       - Image.png
+      - ImageMaterial 2.mat
+      - ImageMaterial 3.mat
+      - ImageMaterial 4.mat
+      - ImageMaterial 5.mat
+      - ImageMaterial 6.mat
+      - ImageMaterial 7.mat
+      - ImageMaterial 8.mat
+      - ImageMaterial 9.mat
       - ImageMaterial.mat
       - Liqmo Glass Examples.prefab
       - MemeText.lsc
@@ -35,7 +43,10 @@ CollapsedEntities:
       - Screen_Cooking.prefab
       - Screen_RecipeSelect.prefab
       - SnapAR_HandGesture.js
+      - StepAnime-1.gif
       - StepAnime-2.gif
+      - StepAnime-3.gif
+      - StepAnime-4.gif
       - StepController_ATTACH_THIS_TO_EACH_STEP.js
       - UI Scroll View.lsc
       - UI.lspkg
@@ -77,6 +88,7 @@ CollapsedEntities:
       - UI.lspkg/memetext.prefab
       - UI.lspkg/package.native
       - UI.lspkg/startbtn.png
+      - anima - Google Chrome 2026-03-21 16-45-35.gif
       - flat.ss_graph
       - image_unlit.ss_graph
       - memeAnimation.js
