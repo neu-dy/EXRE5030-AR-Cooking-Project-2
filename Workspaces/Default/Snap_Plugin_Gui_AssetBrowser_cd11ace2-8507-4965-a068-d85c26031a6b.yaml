@@ -1,7 +1,7 @@
 CollapsedEntities:
   type: stringset
   value:
-    size: 33
+    size: 63
     values:
       - 3D Hand Tracking Assets
       - 3D Hand Tracking Assets/Hand Tracking Asset Left 2.handTracking3D
@@ -10,6 +10,7 @@ CollapsedEntities:
       - 3D Hand Tracking Assets/Hand Tracking Asset Right 2.handTracking3D
       - 3D Hand Tracking Assets/Hand Tracking Asset Right 3.handTracking3D
       - 3D Hand Tracking Assets/Hand Tracking Asset Right.handTracking3D
+      - Card Stack.png
       - Cat SFX Pack.lspkg
       - Cat SFX Pack.lspkg/Audio
       - Cat SFX Pack.lspkg/Audio/cat_1.mp3
@@ -28,11 +29,40 @@ CollapsedEntities:
       - Image 8.mat
       - Image.mat
       - Image.png
+      - Ingredients.png
+      - Mascot.png
+      - Mascot_standalone.png
       - MenuController.js
       - MojitoRecipe.js
       - REF_ONLY_SpectaclesHandGestures.js
       - RecipeManager_ATTACH_THIS_TO_EACH_RECIPE_ASSET.js
       - SnapAR_HandGesture.js
+      - Start_Page_mascot.png
+      - Step 1.png
+      - Step 1_gesture (1).png
+      - Step 1_gesture (2).png
+      - Step 1_gesture.png
+      - Step 2.png
+      - Step 2_gesture (1).png
+      - Step 2_gesture (2).png
+      - Step 2_gesture.png
+      - Step 3.png
+      - Step 3_gesture (1).png
+      - Step 3_gesture (2).png
+      - Step 3_gesture (3).png
+      - Step 3_gesture (4).png
+      - Step 3_gesture (5).png
+      - Step 3_gesture.png
+      - Step 4.png
+      - Step 4_gesture (1).png
+      - Step 4_gesture (2).png
+      - Step 4_gesture.png
+      - Step 5.png
+      - Step 5_gesture (1).png
+      - Step 5_gesture (2).png
+      - Step 5_gesture 2.png
+      - Step 5_gesture.png
+      - Step 6.png
       - StepController_ATTACH_THIS_TO_EACH_STEP.js
       - flat.ss_graph
       - psgbl567345t.jpg

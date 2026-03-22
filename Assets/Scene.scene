@@ -12,7 +12,6 @@
   layers: !<Layers/267ee9a7-aff2-4f9d-9a49-f71214747d03>
     userLayers:
       []
-    HasOrtho: true
   RenderOutput: !<reference> 923415f5-4245-4675-ade1-6d69d6d23e71
   RenderPreviewOutput: !<reference> 923415f5-4245-4675-ade1-6d69d6d23e71
   RenderOverlayOutput: !<reference> 00000000-0000-0000-0000-000000000000
@@ -102,7 +101,6 @@
   renderLayer: 1835007
   LightType: Directional
   Intensity: 1.000000
-  CastShadows: false
   ShadowDensity: 0.440000
   ShadowBlurRadius: 4.000000
   ShadowTextureSize: 512
@@ -124,9 +122,9 @@
   DynamicEnvInputTexture: !<reference> 00000000-0000-0000-0000-000000000000
   InnerConeAngle: 0.000000
   OuterConeAngle: 45.000000
-  DecayType: None
-  DecayLimit: false
-  DecayRange: 40.000000
+  FalloffType: None
+  FalloffRange: .inf
+  ShadowType: None
 - !<SceneObject/00056e79-b066-62ca-0000-000000001406>
   PrefabRemaps:
     []
@@ -150,7 +148,6 @@
   renderLayer: 1835007
   LightType: EnvMap
   Intensity: 1.000000
-  CastShadows: false
   ShadowDensity: 1.000000
   ShadowBlurRadius: 0.000000
   ShadowTextureSize: 512
@@ -172,9 +169,9 @@
   DynamicEnvInputTexture: !<reference> 00000000-0000-0000-0000-000000000000
   InnerConeAngle: 0.000000
   OuterConeAngle: 45.000000
-  DecayType: None
-  DecayLimit: false
-  DecayRange: 40.000000
+  FalloffType: None
+  FalloffRange: .inf
+  ShadowType: None
 - !<SceneObject/033988f7-3bf2-4e8f-9293-de3f604759c0>
   PrefabRemaps:
     []
