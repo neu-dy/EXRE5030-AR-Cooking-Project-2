@@ -1,7 +1,7 @@
 CollapsedEntities:
   type: stringset
   value:
-    size: 92
+    size: 97
     values:
       - 3D Hand Tracking Assets
       - Cat SFX Pack.lspkg
@@ -25,6 +25,8 @@ CollapsedEntities:
       - Image 7.mat
       - Image.mat
       - Image.png
+      - ImageMaterial 10.mat
+      - ImageMaterial 11.mat
       - ImageMaterial 2.mat
       - ImageMaterial 3.mat
       - ImageMaterial 4.mat
@@ -47,7 +49,10 @@ CollapsedEntities:
       - StepAnime-2.gif
       - StepAnime-3.gif
       - StepAnime-4.gif
+      - StepAnime-5.gif
+      - StepAnime-final.gif
       - StepController_ATTACH_THIS_TO_EACH_STEP.js
+      - Steps Animations.prefab
       - UI Scroll View.lsc
       - UI.lspkg
       - UI.lspkg/3-2-1 Countdown.lspkg
