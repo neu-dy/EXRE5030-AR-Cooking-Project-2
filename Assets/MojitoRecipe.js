@@ -48,7 +48,7 @@ function startStepOne() {
     if (script.uiStep2) script.uiStep2.enabled = false;
     if (script.uiFinish) script.uiFinish.enabled = false;
 
-    baselineValue = script.gestureLib ? (script.gestureLib.victoryCount || 0) : 0;
+    baselineValue = script.gestureLib ? (script.gestureLib.chopCount || 0) : 0;
     lastStepCount = baselineValue;
 
     startLongLoop();
@@ -66,7 +66,7 @@ function startStepTwo() {
 
     if (script.successSound) script.successSound.play(1);
 
-    baselineValue = script.gestureLib ? (script.gestureLib.hornsCount || 0) : 0;
+    baselineValue = script.gestureLib ? (script.gestureLib.stirCount || 0) : 0;
     lastStepCount = baselineValue;
 
     startLongLoop();
@@ -98,7 +98,7 @@ script.createEvent("UpdateEvent").bind(function() {
     if (!isRecipeActive || !script.gestureLib) return;
 
     if (currentStepIndex === 1) {
-        var currentCount1 = script.gestureLib.victoryCount || 0;
+        var currentCount1 = script.gestureLib.chopCount || 0;
 
         // play short sound for each +1 increase
         if (currentCount1 > lastStepCount) {
@@ -115,7 +115,7 @@ script.createEvent("UpdateEvent").bind(function() {
         }
     } 
     else if (currentStepIndex === 2) {
-        var currentCount2 = script.gestureLib.hornsCount || 0;
+        var currentCount2 = script.gestureLib.stirCount || 0;
 
         // play short sound for each +1 increase
         if (currentCount2 > lastStepCount) {

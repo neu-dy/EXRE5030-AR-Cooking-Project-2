@@ -1,7 +1,7 @@
 <!-- Shipped by Lens Studio -->
 <!-- Auto-generated. Do not modify - changes overwritten. Add custom content outside this section. -->
 
-# Lens Studio 5.19.2.26031623 Project Reference
+# Lens Studio 5.19.0.26030703 Project Reference
 
 This project uses Lens Studio. Scripts can be written in JavaScript (ES2019 compliant) or TypeScript.
 
