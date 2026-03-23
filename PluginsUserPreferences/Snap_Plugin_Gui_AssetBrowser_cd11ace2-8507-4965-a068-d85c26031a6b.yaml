@@ -1,7 +1,7 @@
 CollapsedEntities:
   type: stringset
   value:
-    size: 66
+    size: 91
     values:
       - 2D Hand Tracking Joints.lspkg
       - 2D Hand Tracking Joints.lspkg/HandTrackingJoints__PUT_IN_ORTHO_CAM.prefab
@@ -33,17 +33,27 @@ CollapsedEntities:
       - Image 7.mat
       - Image.mat
       - Image.png
-      - ImageMaterial 18.mat
-      - ImageMaterial 19.mat
-      - ImageMaterial 20.mat
-      - ImageMaterial 21.mat
-      - ImageMaterial 22.mat
-      - ImageMaterial 23.mat
-      - ImageMaterial 24.mat
+      - ImageMaterial 10.mat
+      - ImageMaterial 11.mat
+      - ImageMaterial 12.mat
+      - ImageMaterial 13.mat
+      - ImageMaterial 14.mat
+      - ImageMaterial 15.mat
+      - ImageMaterial 16.mat
+      - ImageMaterial 17.mat
+      - ImageMaterial 2.mat
+      - ImageMaterial 3.mat
+      - ImageMaterial 4.mat
+      - ImageMaterial 5.mat
+      - ImageMaterial 6.mat
+      - ImageMaterial 7.mat
+      - ImageMaterial 8.mat
+      - ImageMaterial 9.mat
+      - ImageMaterial.mat
       - MenuController.js
-      - MojitoRecipe.js
       - REF_ONLY_SpectaclesHandGestures.js
       - Scene.scene
+      - Sounds
       - Sounds/Loops/Sound Effects for AR Cooking 0 Clap Beat.wav
       - Sounds/Loops/Sound Effects for AR Cooking 0 Shaker.wav
       - Sounds/Loops/Sound Effects for AR Cooking 5 AddIce.wav
@@ -65,7 +75,22 @@ CollapsedEntities:
       - Sounds/OneShots/PourSodaFX.wav
       - Sounds/OneShots/StirDrinkFX.wav
       - Sounds/OneShots/SyrupFX.wav
+      - Step 1.prefab
       - Step3_final.png
+      - StepAnimationALL.lspkg/ImageMaterial 10.mat
+      - StepAnimationALL.lspkg/ImageMaterial 11.mat
+      - StepAnimationALL.lspkg/ImageMaterial 3.mat
+      - StepAnimationALL.lspkg/ImageMaterial 7.mat
+      - StepAnimationALL.lspkg/ImageMaterial 9.mat
+      - StepAnimationALL.lspkg/ImageMaterial.mat
+      - StepAnimationALL.lspkg/StepAnime-1.gif
+      - StepAnimationALL.lspkg/StepAnime-2.gif
+      - StepAnimationALL.lspkg/StepAnime-3.gif
+      - StepAnimationALL.lspkg/StepAnime-4.gif
+      - StepAnimationALL.lspkg/StepAnime-5.gif
+      - StepAnimationALL.lspkg/StepAnime-final.gif
+      - StepAnimationALL.lspkg/Steps Animations.prefab
+      - StepAnimationALL.lspkg/image_unlit.ss_graph
       - flat.ss_graph
       - image_unlit.ss_graph
       - psgbl567345t.jpg
