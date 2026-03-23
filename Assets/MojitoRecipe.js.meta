@@ -27,6 +27,8 @@
   PackagePolicy: CanBeUnpacked
   ScriptInputsHidden:
     gestureLib: false
+    longSoundClip: false
+    shortSoundClip: false
     successSound: false
     uiFinish: false
     uiStep1: false
@@ -44,6 +46,8 @@
       uiStep1: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
       uiStep2: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
       uiFinish: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      shortSoundClip: !<reference.AudioComponent> 00000000-0000-0000-0000-000000000000
+      longSoundClip: !<reference.AudioComponent> 00000000-0000-0000-0000-000000000000
       successSound: !<reference.AudioComponent> 00000000-0000-0000-0000-000000000000
   ScriptTypes:
     -
