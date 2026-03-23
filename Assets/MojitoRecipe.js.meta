@@ -27,12 +27,26 @@
   PackagePolicy: CanBeUnpacked
   ScriptInputsHidden:
     gestureLib: false
-    longSoundClip: false
-    shortSoundClip: false
+    loopSoundStep1: false
+    loopSoundStep2: false
+    loopSoundStep3: false
+    loopSoundStep4: false
+    loopSoundStep5: false
+    loopSoundStep6: false
+    shortSoundStep1: false
+    shortSoundStep2: false
+    shortSoundStep3: false
+    shortSoundStep4: false
+    shortSoundStep5: false
+    shortSoundStep6: false
     successSound: false
     uiFinish: false
     uiStep1: false
     uiStep2: false
+    uiStep3: false
+    uiStep4: false
+    uiStep5: false
+    uiStep6: false
   ScriptTypesHidden:
     {}
   ReadMe: !<reference> 00000000-0000-0000-0000-000000000000
@@ -45,9 +59,23 @@
     - gestureLib: !<reference.ScriptComponent> 00000000-0000-0000-0000-000000000000
       uiStep1: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
       uiStep2: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      uiStep3: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      uiStep4: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      uiStep5: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      uiStep6: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
       uiFinish: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
-      shortSoundClip: !<reference.AudioComponent> 00000000-0000-0000-0000-000000000000
-      longSoundClip: !<reference.AudioComponent> 00000000-0000-0000-0000-000000000000
+      shortSoundStep1: !<reference.AudioComponent> 00000000-0000-0000-0000-000000000000
+      shortSoundStep2: !<reference.AudioComponent> 00000000-0000-0000-0000-000000000000
+      shortSoundStep3: !<reference.AudioComponent> 00000000-0000-0000-0000-000000000000
+      shortSoundStep4: !<reference.AudioComponent> 00000000-0000-0000-0000-000000000000
+      shortSoundStep5: !<reference.AudioComponent> 00000000-0000-0000-0000-000000000000
+      shortSoundStep6: !<reference.AudioComponent> 00000000-0000-0000-0000-000000000000
+      loopSoundStep1: !<reference.AudioComponent> 00000000-0000-0000-0000-000000000000
+      loopSoundStep2: !<reference.AudioComponent> 00000000-0000-0000-0000-000000000000
+      loopSoundStep3: !<reference.AudioComponent> 00000000-0000-0000-0000-000000000000
+      loopSoundStep4: !<reference.AudioComponent> 00000000-0000-0000-0000-000000000000
+      loopSoundStep5: !<reference.AudioComponent> 00000000-0000-0000-0000-000000000000
+      loopSoundStep6: !<reference.AudioComponent> 00000000-0000-0000-0000-000000000000
       successSound: !<reference.AudioComponent> 00000000-0000-0000-0000-000000000000
   ScriptTypes:
     -

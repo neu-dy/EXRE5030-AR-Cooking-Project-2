@@ -1,166 +1,217 @@
 // @input Component.ScriptComponent gestureLib // The script with the count variables
+
+// UI
 // @input SceneObject uiStep1
 // @input SceneObject uiStep2
+// @input SceneObject uiStep3
+// @input SceneObject uiStep4
+// @input SceneObject uiStep5
+// @input SceneObject uiStep6
 // @input SceneObject uiFinish
-// @input Component.AudioComponent shortSoundClip
-// @input Component.AudioComponent longSoundClip
+
+// Step short sounds
+// @input Component.AudioComponent shortSoundStep1
+// @input Component.AudioComponent shortSoundStep2
+// @input Component.AudioComponent shortSoundStep3
+// @input Component.AudioComponent shortSoundStep4
+// @input Component.AudioComponent shortSoundStep5
+// @input Component.AudioComponent shortSoundStep6
+
+// Step loop sounds
+// @input Component.AudioComponent loopSoundStep1
+// @input Component.AudioComponent loopSoundStep2
+// @input Component.AudioComponent loopSoundStep3
+// @input Component.AudioComponent loopSoundStep4
+// @input Component.AudioComponent loopSoundStep5
+// @input Component.AudioComponent loopSoundStep6
+
+// Completion sound
 // @input Component.AudioComponent successSound
 
 var currentStepIndex = 0;
 var baselineValue = 0;
+var lastStepCount = 0;
 var isRecipeActive = false;
 
-// Tracks last observed count so we can detect +1 increases
-var lastStepCount = 0;
-
-// Triggers when the Menu turns this object ON
+// -------------------- ENABLE --------------------
 script.createEvent("OnEnableEvent").bind(function() {
     startStepOne();
 });
 
-// ---------- AUDIO HELPERS ----------
-function playShortSound() {
-    if (script.shortSoundClip) {
-        script.shortSoundClip.play(1);
+// -------------------- AUDIO HELPERS --------------------
+function getShortSoundForStep(stepIndex) {
+    if (stepIndex === 1) return script.shortSoundStep1;
+    if (stepIndex === 2) return script.shortSoundStep2;
+    if (stepIndex === 3) return script.shortSoundStep3;
+    if (stepIndex === 4) return script.shortSoundStep4;
+    if (stepIndex === 5) return script.shortSoundStep5;
+    if (stepIndex === 6) return script.shortSoundStep6;
+    return null;
+}
+
+function getLoopSoundForStep(stepIndex) {
+    if (stepIndex === 1) return script.loopSoundStep1;
+    if (stepIndex === 2) return script.loopSoundStep2;
+    if (stepIndex === 3) return script.loopSoundStep3;
+    if (stepIndex === 4) return script.loopSoundStep4;
+    if (stepIndex === 5) return script.loopSoundStep5;
+    if (stepIndex === 6) return script.loopSoundStep6;
+    return null;
+}
+
+function playShortSoundForStep(stepIndex) {
+    var shortSound = getShortSoundForStep(stepIndex);
+    if (shortSound) {
+        shortSound.play(1);
     }
 }
 
-function startLongLoop() {
-    if (script.longSoundClip) {
-        script.longSoundClip.play(-1); // loop
+function stopAllLoopSounds() {
+    var loopSounds = [
+        script.loopSoundStep1,
+        script.loopSoundStep2,
+        script.loopSoundStep3,
+        script.loopSoundStep4,
+        script.loopSoundStep5,
+        script.loopSoundStep6
+    ];
+
+    for (var i = 0; i < loopSounds.length; i++) {
+        if (loopSounds[i]) {
+            loopSounds[i].stop(false);
+        }
     }
 }
 
-function stopLongLoop() {
-    if (script.longSoundClip) {
-        script.longSoundClip.stop(false);
+function startLoopSoundForStep(stepIndex) {
+    stopAllLoopSounds();
+
+    var loopSound = getLoopSoundForStep(stepIndex);
+    if (loopSound) {
+        loopSound.play(-1); // loop
     }
 }
 
-// ---------- STEP 1 ----------
-function startStepOne() {
-    stopLongLoop();
+// -------------------- UI HELPERS --------------------
+function hideAllStepUI() {
+    if (script.uiStep1) script.uiStep1.enabled = false;
+    if (script.uiStep2) script.uiStep2.enabled = false;
+    if (script.uiStep3) script.uiStep3.enabled = false;
+    if (script.uiStep4) script.uiStep4.enabled = false;
+    if (script.uiStep5) script.uiStep5.enabled = false;
+    if (script.uiStep6) script.uiStep6.enabled = false;
+    if (script.uiFinish) script.uiFinish.enabled = false;
+}
 
-    currentStepIndex = 1;
+function showUIForStep(stepIndex) {
+    hideAllStepUI();
+
+    if (stepIndex === 1 && script.uiStep1) script.uiStep1.enabled = true;
+    if (stepIndex === 2 && script.uiStep2) script.uiStep2.enabled = true;
+    if (stepIndex === 3 && script.uiStep3) script.uiStep3.enabled = true;
+    if (stepIndex === 4 && script.uiStep4) script.uiStep4.enabled = true;
+    if (stepIndex === 5 && script.uiStep5) script.uiStep5.enabled = true;
+    if (stepIndex === 6 && script.uiStep6) script.uiStep6.enabled = true;
+}
+
+// -------------------- COUNT HELPERS --------------------
+function getCurrentGestureCountForStep(stepIndex) {
+    if (!script.gestureLib) return 0;
+
+    if (stepIndex === 1) return script.gestureLib.victoryCount || 0;
+    if (stepIndex === 2) return script.gestureLib.hornsCount || 0;
+
+    // Replace these with your real variable names
+    if (stepIndex === 3) return script.gestureLib.step3Count || 0;
+    if (stepIndex === 4) return script.gestureLib.step4Count || 0;
+    if (stepIndex === 5) return script.gestureLib.step5Count || 0;
+    if (stepIndex === 6) return script.gestureLib.step6Count || 0;
+
+    return 0;
+}
+
+function getGoalForStep(stepIndex) {
+    // Change these to your actual goals
+    if (stepIndex === 1) return 3;
+    if (stepIndex === 2) return 3;
+    if (stepIndex === 3) return 3;
+    if (stepIndex === 4) return 3;
+    if (stepIndex === 5) return 3;
+    if (stepIndex === 6) return 3;
+
+    return 0;
+}
+
+// -------------------- STEP FLOW --------------------
+function startStep(stepIndex) {
+    currentStepIndex = stepIndex;
     isRecipeActive = true;
 
-    if (script.uiStep1) script.uiStep1.enabled = true;
-    if (script.uiStep2) script.uiStep2.enabled = false;
-    if (script.uiFinish) script.uiFinish.enabled = false;
+    showUIForStep(stepIndex);
 
-    baselineValue = script.gestureLib ? (script.gestureLib.chopCount || 0) : 0;
+    baselineValue = getCurrentGestureCountForStep(stepIndex);
     lastStepCount = baselineValue;
 
-    startLongLoop();
-    print("Step 1 Started");
+    startLoopSoundForStep(stepIndex);
+
+    if (stepIndex > 1 && script.successSound) {
+        script.successSound.play(1);
+    }
+
+    print("Step " + stepIndex + " Started");
 }
 
-// ---------- STEP 2 ----------
-function startStepTwo() {
-    stopLongLoop();
-
-    currentStepIndex = 2;
-
-    if (script.uiStep1) script.uiStep1.enabled = false;
-    if (script.uiStep2) script.uiStep2.enabled = true;
-
-    if (script.successSound) script.successSound.play(1);
-
-    baselineValue = script.gestureLib ? (script.gestureLib.stirCount || 0) : 0;
-    lastStepCount = baselineValue;
-
-    startLongLoop();
-    print("Step 2 Started");
+function startStepOne() {
+    startStep(1);
 }
 
-/*
-// ---------- STEP 3 ----------
-function startStepThree() {
-    stopLongLoop();
-
-    currentStepIndex = 3;
-
-    if (script.uiStep2) script.uiStep2.enabled = false;
-    if (script.uiStep3) script.uiStep3.enabled = true;
-
-    if (script.successSound) script.successSound.play(1);
-
-    baselineValue = script.gestureLib ? (script.gestureLib.stepThreeVar || 0) : 0;
-    lastStepCount = baselineValue;
-
-    startLongLoop();
-    print("Step 3 Started");
+function goToNextStep() {
+    if (currentStepIndex < 6) {
+        startStep(currentStepIndex + 1);
+    } else {
+        finishRecipe();
+    }
 }
-*/
 
-// ---------- CONTINUOUS CHECKER ----------
+// -------------------- UPDATE --------------------
 script.createEvent("UpdateEvent").bind(function() {
     if (!isRecipeActive || !script.gestureLib) return;
+    if (currentStepIndex < 1 || currentStepIndex > 6) return;
 
-    if (currentStepIndex === 1) {
-        var currentCount1 = script.gestureLib.chopCount || 0;
+    var currentCount = getCurrentGestureCountForStep(currentStepIndex);
 
-        // play short sound for each +1 increase
-        if (currentCount1 > lastStepCount) {
-            var increase1 = currentCount1 - lastStepCount;
-            for (var i = 0; i < increase1; i++) {
-                playShortSound();
-            }
-            lastStepCount = currentCount1;
+    // Play unique short sound each time count goes up
+    if (currentCount > lastStepCount) {
+        var increase = currentCount - lastStepCount;
+
+        for (var i = 0; i < increase; i++) {
+            playShortSoundForStep(currentStepIndex);
         }
 
-        var delta1 = currentCount1 - baselineValue;
-        if (delta1 >= 3) {
-            startStepTwo();
-        }
-    } 
-    else if (currentStepIndex === 2) {
-        var currentCount2 = script.gestureLib.stirCount || 0;
-
-        // play short sound for each +1 increase
-        if (currentCount2 > lastStepCount) {
-            var increase2 = currentCount2 - lastStepCount;
-            for (var j = 0; j < increase2; j++) {
-                playShortSound();
-            }
-            lastStepCount = currentCount2;
-        }
-
-        var delta2 = currentCount2 - baselineValue;
-        if (delta2 >= 3) {
-            // startStepThree();
-            finishRecipe();
-        }
+        lastStepCount = currentCount;
     }
-    /*
-    else if (currentStepIndex === 3) {
-        var currentCount3 = script.gestureLib.stepThreeVar || 0;
 
-        if (currentCount3 > lastStepCount) {
-            var increase3 = currentCount3 - lastStepCount;
-            for (var k = 0; k < increase3; k++) {
-                playShortSound();
-            }
-            lastStepCount = currentCount3;
-        }
+    var delta = currentCount - baselineValue;
+    var goal = getGoalForStep(currentStepIndex);
 
-        var delta3 = currentCount3 - baselineValue;
-        if (delta3 >= 2) {
-            finishRecipe();
-        }
+    if (delta >= goal) {
+        goToNextStep();
     }
-    */
 });
 
+// -------------------- FINISH --------------------
 function finishRecipe() {
     isRecipeActive = false;
-    stopLongLoop();
+    stopAllLoopSounds();
+    hideAllStepUI();
 
-    if (script.uiStep1) script.uiStep1.enabled = false;
-    if (script.uiStep2) script.uiStep2.enabled = false;
+    if (script.successSound) {
+        script.successSound.play(1);
+    }
 
-    if (script.successSound) script.successSound.play(1);
-    if (script.uiFinish) script.uiFinish.enabled = true;
+    if (script.uiFinish) {
+        script.uiFinish.enabled = true;
+    }
 
     print("Recipe Complete!");
 }
