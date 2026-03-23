@@ -27,8 +27,6 @@
   PackagePolicy: CanBeUnpacked
   ScriptInputsHidden:
     mojitoLogicObject: false
-    recipe01Button: false
-    recipeListScreen: false
     startButton: false
     startScreen: false
   ScriptTypesHidden:
@@ -41,10 +39,8 @@
     []
   DefaultScriptInputs:
     - startScreen: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
-      recipeListScreen: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
       mojitoLogicObject: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
       startButton: !<reference.InteractionComponent> 00000000-0000-0000-0000-000000000000
-      recipe01Button: !<reference.InteractionComponent> 00000000-0000-0000-0000-000000000000
   ScriptTypes:
     -
       {}

@@ -1,4 +1,5 @@
 // @input Component.ScriptComponent gestureLib // The script with the count variables
+// @input SceneObject recipeCanvas 
 
 // UI
 // @input SceneObject uiStep1
@@ -36,6 +37,7 @@ var isRecipeActive = false;
 // -------------------- ENABLE --------------------
 script.createEvent("OnEnableEvent").bind(function() {
     startStepOne();
+    script.recipeCanvas.enabled = true;
 });
 
 // -------------------- AUDIO HELPERS --------------------
@@ -84,10 +86,10 @@ function stopAllLoopSounds() {
 }
 
 function startLoopSoundForStep(stepIndex) {
-    stopAllLoopSounds();
+    //stopAllLoopSounds();
 
     var loopSound = getLoopSoundForStep(stepIndex);
-    if (loopSound) {
+    if (loopSound && !loopSound.isPlaying()) {
         loopSound.play(-1); // loop
     }
 }
@@ -118,14 +120,14 @@ function showUIForStep(stepIndex) {
 function getCurrentGestureCountForStep(stepIndex) {
     if (!script.gestureLib) return 0;
 
-    if (stepIndex === 1) return script.gestureLib.victoryCount || 0;
-    if (stepIndex === 2) return script.gestureLib.hornsCount || 0;
+    if (stepIndex === 1) return script.gestureLib.chopCount || 0;
+    if (stepIndex === 2) return script.gestureLib.stirCount || 0;
 
     // Replace these with your real variable names
-    if (stepIndex === 3) return script.gestureLib.step3Count || 0;
-    if (stepIndex === 4) return script.gestureLib.step4Count || 0;
-    if (stepIndex === 5) return script.gestureLib.step5Count || 0;
-    if (stepIndex === 6) return script.gestureLib.step6Count || 0;
+    if (stepIndex === 3) return script.gestureLib.chopCount || 0;
+    if (stepIndex === 4) return script.gestureLib.stirCount || 0;
+    if (stepIndex === 5) return script.gestureLib.chopCount || 0;
+    if (stepIndex === 6) return script.gestureLib.stirCount || 0;
 
     return 0;
 }
@@ -152,8 +154,6 @@ function startStep(stepIndex) {
     baselineValue = getCurrentGestureCountForStep(stepIndex);
     lastStepCount = baselineValue;
 
-    startLoopSoundForStep(stepIndex);
-
     if (stepIndex > 1 && script.successSound) {
         script.successSound.play(1);
     }
@@ -167,6 +167,8 @@ function startStepOne() {
 
 function goToNextStep() {
     if (currentStepIndex < 6) {
+        startLoopSoundForStep(currentStepIndex);
+        print("Finished step.");
         startStep(currentStepIndex + 1);
     } else {
         finishRecipe();

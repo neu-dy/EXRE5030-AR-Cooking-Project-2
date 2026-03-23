@@ -33,6 +33,7 @@
     loopSoundStep4: false
     loopSoundStep5: false
     loopSoundStep6: false
+    recipeCanvas: false
     shortSoundStep1: false
     shortSoundStep2: false
     shortSoundStep3: false
@@ -57,6 +58,7 @@
     []
   DefaultScriptInputs:
     - gestureLib: !<reference.ScriptComponent> 00000000-0000-0000-0000-000000000000
+      recipeCanvas: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
       uiStep1: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
       uiStep2: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
       uiStep3: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
