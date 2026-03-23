@@ -1,7 +1,7 @@
 CollapsedEntities:
   type: stringset
   value:
-    size: 36
+    size: 58
     values:
       - 2D Hand Tracking Joints.lspkg
       - 2D Hand Tracking Joints.lspkg/HandTrackingJoints__PUT_IN_ORTHO_CAM.prefab
@@ -23,6 +23,7 @@ CollapsedEntities:
       - Cat SFX Pack.lspkg
       - Cat SFX Pack.lspkg/Audio
       - Cat SFX Pack.lspkg/package.native
+      - Echopark.hdr
       - GestureLibrary.js
       - Image 2.mat
       - Image 3.mat
@@ -35,6 +36,27 @@ CollapsedEntities:
       - MojitoRecipe.js
       - REF_ONLY_SpectaclesHandGestures.js
       - Scene.scene
+      - Sounds/Loops/Sound Effects for AR Cooking 0 Clap Beat.wav
+      - Sounds/Loops/Sound Effects for AR Cooking 0 Shaker.wav
+      - Sounds/Loops/Sound Effects for AR Cooking 5 AddIce.wav
+      - Sounds/Loops/Sound Effects for AR Cooking AddGarnish1.wav
+      - Sounds/Loops/Sound Effects for AR Cooking AddLimeGarnish.wav
+      - Sounds/Loops/Sound Effects for AR Cooking AddMint.wav
+      - Sounds/Loops/Sound Effects for AR Cooking AlwaysOn.wav
+      - Sounds/Loops/Sound Effects for AR Cooking ChopLime.wav
+      - Sounds/Loops/Sound Effects for AR Cooking CrushMuddle.wav
+      - Sounds/Loops/Sound Effects for AR Cooking PourSoda.wav
+      - Sounds/Loops/Sound Effects for AR Cooking PourSyrup.wav
+      - Sounds/Loops/Sound Effects for AR Cooking StirDrink.wav
+      - Sounds/OneShots/AddIceFX.wav
+      - Sounds/OneShots/AddMintFX.wav
+      - Sounds/OneShots/ChopLimeFX.wav
+      - Sounds/OneShots/CrushMuddleFX.wav
+      - Sounds/OneShots/LimeGarnishFX.wav
+      - Sounds/OneShots/MintGarnishFX.wav
+      - Sounds/OneShots/PourSodaFX.wav
+      - Sounds/OneShots/StirDrinkFX.wav
+      - Sounds/OneShots/SyrupFX.wav
       - Step3_final.png
       - flat.ss_graph
       - image_unlit.ss_graph

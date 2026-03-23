@@ -1,12 +1,12 @@
 studioVersion:
   major: 5
-  minor: 19
-  patch: 0
-  build: 26030703
+  minor: 15
+  patch: 4
+  build: 26022322
   type: Public
-coreVersion: 352
-clientVersion: 13.82
-updateCheckpoint: 92
+coreVersion: 330
+clientVersion: 13.60
+updateCheckpoint: 76
 sceneId: 0a1ccb1a-fe88-4fbb-9883-e3af3c75fd99
 metaInfo:
   hints:
@@ -16,10 +16,6 @@ metaInfo:
   lensName: Untitled
   lensDescriptors:
     []
-  lensApplicableContext:
-    - live_camera
-    - reply_camera
-    - video_chat
   lensApplicability:
     - Front
     - Back
@@ -33,7 +29,6 @@ metaInfo:
   fromTemplateUrl: Lens Studio 5.15.4.26022322
   activationCamera: Front
   sourceMapEnabled: false
-  shaderCacheInvalidationEnabled: false
   usingMinClientVersions: false
   androidMinClientVersion:
     major: 0
@@ -47,7 +42,3 @@ metaInfo:
     build: 0
   documentId: f3d524c5-ac07-44a7-b03a-e07d591396ec
   originalDocumentId: f3d524c5-ac07-44a7-b03a-e07d591396ec
-  packageId: ""
-  packageVersion: ""
-  spkPrivilegeLevel: Generic
-  gluboEnabled: false
