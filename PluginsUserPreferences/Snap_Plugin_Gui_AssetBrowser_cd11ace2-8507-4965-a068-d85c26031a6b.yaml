@@ -1,7 +1,7 @@
 CollapsedEntities:
   type: stringset
   value:
-    size: 63
+    size: 89
     values:
       - 3D Hand Tracking Assets
       - 3D Hand Tracking Assets/Hand Tracking Asset Left 2.handTracking3D
@@ -20,6 +20,7 @@ CollapsedEntities:
       - Cat SFX Pack.lspkg/CatSFX__PLACE_IN_SCENE.prefab
       - Cat SFX Pack.lspkg/package.native
       - Echopark.hdr
+      - Frame 9.png
       - Image 2.mat
       - Image 3.mat
       - Image 4.mat
@@ -29,6 +30,24 @@ CollapsedEntities:
       - Image 8.mat
       - Image.mat
       - Image.png
+      - ImageMaterial 10.mat
+      - ImageMaterial 11.mat
+      - ImageMaterial 12.mat
+      - ImageMaterial 13.mat
+      - ImageMaterial 14.mat
+      - ImageMaterial 15.mat
+      - ImageMaterial 16.mat
+      - ImageMaterial 17.mat
+      - ImageMaterial 2.mat
+      - ImageMaterial 3.mat
+      - ImageMaterial 4.mat
+      - ImageMaterial 5.mat
+      - ImageMaterial 6.mat
+      - ImageMaterial 7.mat
+      - ImageMaterial 8.mat
+      - ImageMaterial 9.mat
+      - ImageMaterial.mat
+      - Ingredients (1).png
       - Ingredients.png
       - Mascot.png
       - Mascot_standalone.png
@@ -39,6 +58,7 @@ CollapsedEntities:
       - SnapAR_HandGesture.js
       - Start_Page_mascot.png
       - Step 1.png
+      - Step 1.prefab
       - Step 1_gesture (1).png
       - Step 1_gesture (2).png
       - Step 1_gesture.png
@@ -60,10 +80,16 @@ CollapsedEntities:
       - Step 5.png
       - Step 5_gesture (1).png
       - Step 5_gesture (2).png
-      - Step 5_gesture 2.png
       - Step 5_gesture.png
       - Step 6.png
+      - Step1_final.png
+      - Step2_final.png
+      - Step3_final.png
+      - Step4_final.png
+      - Step5_final.png
+      - Step6_final.png
       - StepController_ATTACH_THIS_TO_EACH_STEP.js
       - flat.ss_graph
+      - image_unlit.ss_graph
       - psgbl567345t.jpg
   options: 4

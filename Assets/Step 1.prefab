@@ -1,0 +1,41 @@
+- !<ObjectPrefab/83adf705-0603-4613-9b51-462a14085d39>
+  PackagePath: ""
+  objects:
+    - !<own> b49f712e-4c08-4d88-b9e5-2546c8dd1181
+  LazyLoading: false
+  RetainAssets: true
+- !<Image/2664152e-7909-4861-96d0-16b4be1c2947>
+  PrefabRemaps:
+    []
+  Name: Image
+  Enabled: true
+  RenderOrder: 0
+  StretchMode: Fit
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+  ShadowDensity: 1.000000
+  Materials:
+    - !<reference> 8a50620a-6844-4673-b82a-efdf9508668f
+  FlipX: false
+  FlipY: false
+  RotationAngle: 0
+  Pivot: {x: 0.000000, y: 0.000000}
+  ExtentsTarget: !<reference> 00000000-0000-0000-0000-000000000000
+- !<SceneObject/b49f712e-4c08-4d88-b9e5-2546c8dd1181>
+  PrefabRemaps:
+    - 2664152e-7909-4861-96d0-16b4be1c2947: 2664152e-7909-4861-692f-e94b41e3d6b8
+    - b49f712e-4c08-4d88-b9e5-2546c8dd1181: b49f712e-4c08-4d88-461a-dab93722ee7e
+  Name: Step 1
+  Enabled: true
+  Layers: 1048576
+  LocalTransform: !<TransformEntity>
+    Position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> 2664152e-7909-4861-96d0-16b4be1c2947
