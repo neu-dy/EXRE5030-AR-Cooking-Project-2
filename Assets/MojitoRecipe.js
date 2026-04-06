@@ -29,6 +29,8 @@
 // Completion sound
 // @input Component.AudioComponent successSound
 
+print("Mojito Recipe loaded");
+
 var currentStepIndex = 0;
 var baselineValue = 0;
 var lastStepCount = 0;
@@ -93,6 +95,35 @@ function startLoopSoundForStep(stepIndex) {
         loopSound.play(-1); // loop
     }
 }
+// -------------------- ADDED: GESTURE ENABLE PER STEP --------------------
+function setGestureEnableForStep(stepIndex) {
+    if (!script.gestureLib) {
+        return;
+    }
+
+    script.gestureLib.enableChop = false;
+    script.gestureLib.enableStir = false;
+    script.gestureLib.enableSqueeze = false;
+    script.gestureLib.enableScoop = false;
+
+    if (stepIndex === 1) {
+        script.gestureLib.enableChop = true;
+    } else if (stepIndex === 2) {
+        script.gestureLib.enableScoop = true;
+    } else if (stepIndex === 3) {
+        script.gestureLib.enableChop = true;
+    } else if (stepIndex === 4) {
+        script.gestureLib.enableScoop = true;
+    } else if (stepIndex === 5) {
+        script.gestureLib.enableChop = true;
+    } else if (stepIndex === 6) {
+        script.gestureLib.enableScoop = true;
+    }
+
+    print("Step " + stepIndex + " gesture enabled");
+    print("enableChop: " + script.gestureLib.enableChop);
+    print("enableScoop: " + script.gestureLib.enableScoop);
+}
 
 // -------------------- UI HELPERS --------------------
 function hideAllStepUI() {
@@ -121,13 +152,13 @@ function getCurrentGestureCountForStep(stepIndex) {
     if (!script.gestureLib) return 0;
 
     if (stepIndex === 1) return script.gestureLib.chopCount || 0;
-    if (stepIndex === 2) return script.gestureLib.stirCount || 0;
+    if (stepIndex === 2) return script.gestureLib.scoopCount || 0;
 
     // Replace these with your real variable names
     if (stepIndex === 3) return script.gestureLib.chopCount || 0;
-    if (stepIndex === 4) return script.gestureLib.stirCount || 0;
+    if (stepIndex === 4) return script.gestureLib.scoopCount || 0;
     if (stepIndex === 5) return script.gestureLib.chopCount || 0;
-    if (stepIndex === 6) return script.gestureLib.stirCount || 0;
+    if (stepIndex === 6) return script.gestureLib.scoopCount || 0;
 
     return 0;
 }
@@ -148,6 +179,8 @@ function getGoalForStep(stepIndex) {
 function startStep(stepIndex) {
     currentStepIndex = stepIndex;
     isRecipeActive = true;
+
+    setGestureEnableForStep(stepIndex); // ADDED
 
     showUIForStep(stepIndex);
 
@@ -184,19 +217,30 @@ script.createEvent("UpdateEvent").bind(function() {
 
     // Play unique short sound each time count goes up
     if (currentCount > lastStepCount) {
-        var increase = currentCount - lastStepCount;
+    var increase = currentCount - lastStepCount;
 
-        for (var i = 0; i < increase; i++) {
-            playShortSoundForStep(currentStepIndex);
-        }
+    for (var i = 0; i < increase; i++) {
+        playShortSoundForStep(currentStepIndex);
+    }
 
-        lastStepCount = currentCount;
+    // ----------------- ADDED FOR LOGGER COUNT----------------------
+    var delta = currentCount - baselineValue; 
+    var goal = getGoalForStep(currentStepIndex);
+
+    if (delta > goal) {
+        delta = goal;
+    }
+
+    print("[STEP " + currentStepIndex + "] " + delta + "/" + goal);
+
+    lastStepCount = currentCount;
     }
 
     var delta = currentCount - baselineValue;
     var goal = getGoalForStep(currentStepIndex);
 
     if (delta >= goal) {
+        print("[STEP " + currentStepIndex + "] COMPLETE"); //ADDED FOR LOGGER
         goToNextStep();
     }
 });
