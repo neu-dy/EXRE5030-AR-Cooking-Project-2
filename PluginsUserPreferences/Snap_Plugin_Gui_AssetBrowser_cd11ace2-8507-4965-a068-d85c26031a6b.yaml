@@ -1,7 +1,7 @@
 CollapsedEntities:
   type: stringset
   value:
-    size: 98
+    size: 105
     values:
       - 2D Hand Tracking Joints.lspkg
       - 2D Hand Tracking Joints.lspkg/HandTrackingJoints__PUT_IN_ORTHO_CAM.prefab
@@ -42,7 +42,14 @@ CollapsedEntities:
       - ImageMaterial 17.mat
       - ImageMaterial 2.mat
       - ImageMaterial 25.mat
+      - ImageMaterial 26.mat
+      - ImageMaterial 27.mat
+      - ImageMaterial 28.mat
+      - ImageMaterial 29.mat
       - ImageMaterial 3.mat
+      - ImageMaterial 30.mat
+      - ImageMaterial 31.mat
+      - ImageMaterial 32.mat
       - ImageMaterial 4.mat
       - ImageMaterial 5.mat
       - ImageMaterial 6.mat

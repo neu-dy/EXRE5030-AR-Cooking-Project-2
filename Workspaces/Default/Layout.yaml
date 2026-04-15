@@ -11,8 +11,6 @@ dock:
           - items:
               - persistentName: Snap.Plugin.Gui.AssetBrowser
                 Uuid: cd11ace2-8507-4965-a068-d85c26031a6b
-              - persistentName: Snap.Plugin.Gui.LoggerPanel
-                Uuid: 3205ba20-ad7c-4a6d-b994-c1b40319ba98
             type: section
             current: 0
         sizes:
@@ -29,8 +27,8 @@ dock:
             type: section
             current: 0
           - items:
-              - persistentName: Snap.Plugin.Gui.ScriptEditor
-                Uuid: a5ade733-7468-4802-be46-0e204759856b
+              - persistentName: Snap.Plugin.Gui.LoggerPanel
+                Uuid: 3205ba20-ad7c-4a6d-b994-c1b40319ba98
               - persistentName: Snap.Plugin.Gui.ScriptEditor
                 Uuid: 84d7619d-2429-4e5b-a49e-a9aa1a798bfe
               - persistentName: Com.Snap.LensBasedEditors
