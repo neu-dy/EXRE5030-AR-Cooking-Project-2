@@ -1,7 +1,7 @@
 CollapsedEntities:
   type: stringset
   value:
-    size: 92
+    size: 98
     values:
       - 2D Hand Tracking Joints.lspkg
       - 2D Hand Tracking Joints.lspkg/HandTrackingJoints__PUT_IN_ORTHO_CAM.prefab
@@ -19,7 +19,6 @@ CollapsedEntities:
       - 2D Hand Tracking Joints.lspkg/Textures/circle_animation.t3d/atlas_0.jpg
       - 2D Hand Tracking Joints.lspkg/Textures/circle_animation.t3d/circle_animation
       - 2D Hand Tracking Joints.lspkg/package.native
-      - 3D Hand Tracking Assets
       - Cat SFX Pack.lspkg
       - Cat SFX Pack.lspkg/Audio
       - Cat SFX Pack.lspkg/package.native
@@ -42,6 +41,7 @@ CollapsedEntities:
       - ImageMaterial 16.mat
       - ImageMaterial 17.mat
       - ImageMaterial 2.mat
+      - ImageMaterial 25.mat
       - ImageMaterial 3.mat
       - ImageMaterial 4.mat
       - ImageMaterial 5.mat
@@ -50,6 +50,7 @@ CollapsedEntities:
       - ImageMaterial 8.mat
       - ImageMaterial 9.mat
       - ImageMaterial.mat
+      - Mascot_standalone.png
       - MenuController.js
       - MojitoRecipe.js
       - REF_ONLY_SpectaclesHandGestures.js
@@ -77,7 +78,12 @@ CollapsedEntities:
       - Sounds/OneShots/StirDrinkFX.wav
       - Sounds/OneShots/SyrupFX.wav
       - Step 1.prefab
+      - Step1_final.png
+      - Step2_final.png
       - Step3_final.png
+      - Step4_final.png
+      - Step5_final.png
+      - Step6_final.png
       - StepAnimationALL.lspkg/ImageMaterial 10.mat
       - StepAnimationALL.lspkg/ImageMaterial 11.mat
       - StepAnimationALL.lspkg/ImageMaterial 3.mat
