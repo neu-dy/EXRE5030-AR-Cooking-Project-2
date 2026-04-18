@@ -462,7 +462,7 @@
   PrefabRemaps:
     []
   Name: 1/3
-  Enabled: true
+  Enabled: false
   Layers: 1048576
   LocalTransform: !<TransformEntity>
     Position: {x: 0.000000, y: 0.000000, z: 0.000000}
@@ -905,8 +905,10 @@
   ScriptInputs:
     "":
       startScreen: !<reference.SceneObject> f32d460f-0eea-442d-a034-9ae297b2a583
+      ingredientsScreen: !<reference.SceneObject> 93d6d4ff-d106-44be-878a-87a895d71564
       mojitoLogicObject: !<reference.SceneObject> 4f2babc1-6c83-4365-b2cc-00b437f51c6d
-      startButton: !<reference.InteractionComponent> 31922ccb-fe27-482e-aa1d-a7f92907b6be
+      startButton: !<reference.InteractionComponent> 96e4cad6-b8d2-4222-becb-00619e39951e
+      startRecipeButton: !<reference.InteractionComponent> 6d804839-468e-4bf3-a7e7-273ae087c228
   ScriptTypes:
     "":
       {}
@@ -1121,7 +1123,7 @@
   PrefabRemaps:
     []
   Name: 3/3
-  Enabled: true
+  Enabled: false
   Layers: 1048576
   LocalTransform: !<TransformEntity>
     Position: {x: 0.000000, y: 0.000000, z: 0.000000}
@@ -1137,7 +1139,7 @@
   PrefabRemaps:
     []
   Name: 1/3
-  Enabled: true
+  Enabled: false
   Layers: 1048576
   LocalTransform: !<TransformEntity>
     Position: {x: 0.000000, y: 0.000000, z: 0.000000}
@@ -1355,7 +1357,7 @@
   PrefabRemaps:
     []
   Name: 3/3
-  Enabled: true
+  Enabled: false
   Layers: 1048576
   LocalTransform: !<TransformEntity>
     Position: {x: 0.000000, y: 0.000000, z: 0.000000}
@@ -1395,6 +1397,7 @@
     Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
     HasSegmentScaleCompensation: false
   Children:
+    - !<own> 93d6d4ff-d106-44be-878a-87a895d71564
     - !<own> 6684c0de-69cb-46ee-b2cb-3d5b97fc9e3a
     - !<own> fe32b72f-1a9d-4b49-a589-143e41c802d8
     - !<own> f543a8d2-cb57-418f-8fae-c619979f8b65
@@ -1839,16 +1842,6 @@
     bottom: 0.000000
     right: 0.000000
     top: 0.000000
-- !<InteractionComponent/31922ccb-fe27-482e-aa1d-a7f92907b6be>
-  PrefabRemaps:
-    []
-  Name: Interaction
-  Enabled: true
-  Camera: !<reference> 00000000-0000-0000-0000-000000000000
-  MinimumTouchSize: 0.000000
-  DepthFilter: true
-  MeshVisuals:
-    []
 - !<SceneObject/3665cc62-6011-4ae5-831b-d7944157164e>
   PrefabRemaps:
     []
@@ -2205,10 +2198,10 @@
   RawMode: true
   ForceBasic: true
   Anchor:
-    left: -0.936824
-    bottom: -0.929563
-    right: -0.383106
-    top: -0.375846
+    left: -0.942584
+    bottom: -0.673848
+    right: -0.388866
+    top: -0.120131
   Offset:
     left: 0.000000
     bottom: 0.000000
@@ -2287,7 +2280,7 @@
   PrefabRemaps:
     []
   Name: 2/3
-  Enabled: true
+  Enabled: false
   Layers: 1048576
   LocalTransform: !<TransformEntity>
     Position: {x: 0.000000, y: 0.000000, z: 0.000000}
@@ -2524,10 +2517,10 @@
   RawMode: true
   ForceBasic: true
   Anchor:
-    left: -1.091637
-    bottom: -1.002451
-    right: -0.131856
-    top: -0.042671
+    left: -1.097396
+    bottom: -0.746736
+    right: -0.137616
+    top: 0.213044
   Offset:
     left: 0.000000
     bottom: 0.000000
@@ -2666,7 +2659,7 @@
   PrefabRemaps:
     []
   Name: 1/3
-  Enabled: true
+  Enabled: false
   Layers: 1048576
   LocalTransform: !<TransformEntity>
     Position: {x: 0.000000, y: 0.000000, z: 0.000000}
@@ -2728,13 +2721,14 @@
   LocalTransform: !<TransformEntity>
     Position: {x: 0.000000, y: 0.000000, z: 0.000000}
     Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
-    Scale: {x: 800.000000, y: 800.000000, z: 800.000000}
+    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
     HasSegmentScaleCompensation: false
   Children:
     []
   Components:
     - !<own> 08502c03-9c4b-414c-94c8-871728f1139a
-    - !<own> 31922ccb-fe27-482e-aa1d-a7f92907b6be
+    - !<own> 59060cad-b572-4dc4-a16e-94ff9bbfde1b
+    - !<own> 96e4cad6-b8d2-4222-becb-00619e39951e
 - !<Image/4db23f5b-25bf-44c7-b330-11ab7f96d866>
   PrefabRemaps:
     []
@@ -2789,7 +2783,7 @@
   PrefabRemaps:
     []
   Name: GestureountUI_Final 3
-  Enabled: false
+  Enabled: true
   Layers: 1048576
   LocalTransform: !<TransformEntity>
     Position: {x: 0.000000, y: 0.000000, z: 0.000000}
@@ -2994,7 +2988,7 @@
   PrefabRemaps:
     []
   Name: 1/3
-  Enabled: true
+  Enabled: false
   Layers: 1048576
   LocalTransform: !<TransformEntity>
     Position: {x: 0.000000, y: 0.000000, z: 0.000000}
@@ -3006,6 +3000,39 @@
   Components:
     - !<own> 88c1816f-5b79-4a7d-bf0b-3038e6648e84
     - !<own> 8e774faf-d8ed-4d10-83b5-0e64f585b3a6
+- !<ScreenTransform/59060cad-b572-4dc4-a16e-94ff9bbfde1b>
+  PrefabRemaps:
+    []
+  Name: Screen Transform
+  Enabled: true
+  IsAdvanced: false
+  Constraints:
+    pinToLeft: false
+    pinToTop: false
+    pinToRight: false
+    pinToBottom: false
+    fixedWidth: false
+    fixedHeight: false
+    deactivatedFixedSprite: false
+    deactivatedFixedPivot: false
+  Pivot: {x: 0.000000, y: 0.000000}
+  Transform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  RawMode: true
+  ForceBasic: true
+  Anchor:
+    left: -1.000000
+    bottom: -0.695711
+    right: 1.000000
+    top: 0.874335
+  Offset:
+    left: 0.000000
+    bottom: 0.000000
+    right: 0.000000
+    top: 0.000000
 - !<SceneObject/5a033ab9-dffd-4426-92a5-6f5ae41ff681>
   PrefabRemaps:
     []
@@ -3095,10 +3122,10 @@
   RawMode: true
   ForceBasic: true
   Anchor:
-    left: -0.922268
-    bottom: -0.970779
-    right: -0.347636
-    top: -0.359689
+    left: -0.928028
+    bottom: -0.715064
+    right: -0.353396
+    top: -0.103974
   Offset:
     left: 0.000000
     bottom: 0.000000
@@ -3408,7 +3435,7 @@
   PrefabRemaps:
     []
   Name: 2/3
-  Enabled: true
+  Enabled: false
   Layers: 1048576
   LocalTransform: !<TransformEntity>
     Position: {x: 0.000000, y: 0.000000, z: 0.000000}
@@ -3495,7 +3522,7 @@
   PrefabRemaps:
     []
   Name: 3/3
-  Enabled: true
+  Enabled: false
   Layers: 1048576
   LocalTransform: !<TransformEntity>
     Position: {x: 0.000000, y: 0.000000, z: 0.000000}
@@ -3579,7 +3606,7 @@
   PrefabRemaps:
     []
   Name: Mascot_standalone
-  Enabled: true
+  Enabled: false
   Layers: 1048576
   LocalTransform: !<TransformEntity>
     Position: {x: 0.000000, y: 0.000000, z: 0.000000}
@@ -3650,7 +3677,7 @@
   PrefabRemaps:
     []
   Name: 2/3
-  Enabled: true
+  Enabled: false
   Layers: 1048576
   LocalTransform: !<TransformEntity>
     Position: {x: 0.000000, y: 0.000000, z: 0.000000}
@@ -3823,6 +3850,16 @@
     []
   Components:
     - !<own> 96fbe6a0-8057-461c-9530-f41bd61f7e07
+- !<InteractionComponent/6d804839-468e-4bf3-a7e7-273ae087c228>
+  PrefabRemaps:
+    []
+  Name: Interaction
+  Enabled: true
+  Camera: !<reference> 00000000-0000-0000-0000-000000000000
+  MinimumTouchSize: 0.000000
+  DepthFilter: true
+  MeshVisuals:
+    []
 - !<Image/6e4b2a69-82e1-49a2-90d7-2d520f35d9fd>
   PrefabRemaps:
     []
@@ -4077,7 +4114,7 @@
   PrefabRemaps:
     []
   Name: 1/3
-  Enabled: true
+  Enabled: false
   Layers: 1048576
   LocalTransform: !<TransformEntity>
     Position: {x: 0.000000, y: 0.000000, z: 0.000000}
@@ -4311,7 +4348,7 @@
   PrefabRemaps:
     []
   Name: Step1_final
-  Enabled: true
+  Enabled: false
   Layers: 1048576
   LocalTransform: !<TransformEntity>
     Position: {x: 0.000000, y: 0.000000, z: 0.000000}
@@ -4659,7 +4696,7 @@
   PrefabRemaps:
     []
   Name: Ingredients
-  Enabled: true
+  Enabled: false
   Layers: 1048576
   LocalTransform: !<TransformEntity>
     Position: {x: 0.000000, y: 0.000000, z: 0.000000}
@@ -4671,6 +4708,7 @@
   Components:
     - !<own> 097ba989-7039-4fa3-b02a-34f021623b19
     - !<own> dcc8fc2f-b43c-4b55-8cfc-43eb7be9faa7
+    - !<own> 6d804839-468e-4bf3-a7e7-273ae087c228
 - !<Image/94766327-b696-4d35-94d0-1c73e2be710d>
   PrefabRemaps:
     []
@@ -4759,7 +4797,7 @@
   PrefabRemaps:
     []
   Name: GestureountUI_Final 5
-  Enabled: false
+  Enabled: true
   Layers: 1048576
   LocalTransform: !<TransformEntity>
     Position: {x: 0.000000, y: 0.000000, z: 0.000000}
@@ -4805,6 +4843,16 @@
     bottom: 0.000000
     right: 0.000000
     top: 0.000000
+- !<InteractionComponent/96e4cad6-b8d2-4222-becb-00619e39951e>
+  PrefabRemaps:
+    []
+  Name: Interaction
+  Enabled: true
+  Camera: !<reference> 00000000-0000-0000-0000-000000000000
+  MinimumTouchSize: 0.000000
+  DepthFilter: true
+  MeshVisuals:
+    []
 - !<AudioComponent/96fbe6a0-8057-461c-9530-f41bd61f7e07>
   PrefabRemaps:
     []
@@ -5522,7 +5570,7 @@
   PrefabRemaps:
     []
   Name: GestureountUI_Final 6
-  Enabled: false
+  Enabled: true
   Layers: 1048576
   LocalTransform: !<TransformEntity>
     Position: {x: 0.000000, y: 0.000000, z: 0.000000}
@@ -5553,16 +5601,16 @@
   Pivot: {x: 0.000000, y: 0.000000}
   Transform:
     position: {x: 0.000000, y: 0.000000, z: 0.000000}
-    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: -0.000000, z: 0.000010}
     scale: {x: 1.000000, y: 1.000000, z: 1.000000}
     hasSegmentScaleCompensation: false
   RawMode: true
   ForceBasic: true
   Anchor:
-    left: -1.239443
-    bottom: -1.267024
-    right: -0.032155
-    top: -0.059736
+    left: -1.245202
+    bottom: -1.011309
+    right: -0.037915
+    top: 0.195979
   Offset:
     left: 0.000000
     bottom: 0.000000
@@ -5572,7 +5620,7 @@
   PrefabRemaps:
     []
   Name: 3/3
-  Enabled: true
+  Enabled: false
   Layers: 1048576
   LocalTransform: !<TransformEntity>
     Position: {x: 0.000000, y: 0.000000, z: 0.000000}
@@ -5639,7 +5687,7 @@
   PrefabRemaps:
     []
   Name: GestureountUI_Final 2
-  Enabled: false
+  Enabled: true
   Layers: 1048576
   LocalTransform: !<TransformEntity>
     Position: {x: 0.000000, y: 0.000000, z: 0.000000}
@@ -5821,7 +5869,7 @@
   PrefabRemaps:
     []
   Name: StepAnime-1
-  Enabled: true
+  Enabled: false
   Layers: 1048576
   LocalTransform: !<TransformEntity>
     Position: {x: 0.000000, y: 0.000000, z: 0.000000}
@@ -6137,6 +6185,31 @@
       uiStep5: !<reference.SceneObject> fa5bc8a0-832b-439f-a6de-f610223cbda0
       uiStep6: !<reference.SceneObject> 4942d638-fb4d-4865-8d2a-77ce3af82f31
       uiFinish: !<reference.SceneObject> b8fddc72-32e7-45cd-81cf-22bd5ce3c05a
+      stepAnime1: !<reference.SceneObject> baafb8a5-a6cc-4947-98f2-70a84dc6553a
+      stepAnime2: !<reference.SceneObject> 9a4f8872-67e3-4640-bd33-c114102dd753
+      stepAnime3: !<reference.SceneObject> fb726850-d6a6-4ce8-aa7b-358a518c0daa
+      stepAnime4: !<reference.SceneObject> e45239f2-88d0-4871-bfdd-e796df8d9b91
+      stepAnime5: !<reference.SceneObject> 528e5d94-ed55-48dd-9f06-11130319cb6f
+      stepAnimeFinal: !<reference.SceneObject> b09309b3-56ee-4867-90bd-94db98510c6e
+      gestureImg1_1: !<reference.SceneObject> 0644c6a3-86f1-4186-870f-e10584d666f1
+      gestureImg1_2: !<reference.SceneObject> e4fc558c-2f7f-413c-ad8e-5794d7f9ee8f
+      gestureImg1_3: !<reference.SceneObject> 24189738-1235-42ce-bb43-a748f6ddc796
+      gestureImg2_1: !<reference.SceneObject> 1a2b2f92-b624-47da-8c67-7db224bcb06f
+      gestureImg2_2: !<reference.SceneObject> dd382e81-df71-4aa3-af29-b9ccc4c63c83
+      gestureImg2_3: !<reference.SceneObject> c87f31a6-4d9c-4e71-8323-3cb5c842a5dc
+      gestureImg3_1: !<reference.SceneObject> 7f4cc8e9-36b0-4914-a7c7-21965c301c79
+      gestureImg3_2: !<reference.SceneObject> 6930e90a-4bf2-49cd-9d13-7d5e83ce8021
+      gestureImg3_3: !<reference.SceneObject> 6465839a-485d-488e-90a6-59f5f57a9c72
+      gestureImg4_1: !<reference.SceneObject> 4a846f19-c5f4-4f47-8726-6569c720a0c8
+      gestureImg4_2: !<reference.SceneObject> 4177ffa5-9822-471b-a57a-fde07ea83c20
+      gestureImg4_3: !<reference.SceneObject> ae08e892-3e69-4e9e-85a5-eab16b5e26a1
+      gestureImg5_1: !<reference.SceneObject> 58ca6c35-c3b0-4a44-a816-ae7240579aa8
+      gestureImg5_2: !<reference.SceneObject> 62d17a48-f935-45d2-8f57-8275db208f99
+      gestureImg5_3: !<reference.SceneObject> 18fe3385-fa9f-4837-ae97-4be0a6836734
+      gestureImg6_1: !<reference.SceneObject> d8bedf04-3aa6-469e-adc6-64531e9a19c0
+      gestureImg6_2: !<reference.SceneObject> f5c19a6f-82b0-4ac8-9e07-a61fe230fa90
+      gestureImg6_3: !<reference.SceneObject> e0a687c8-150d-42f4-815b-f8758d615628
+      mascot: !<reference.SceneObject> 6684c0de-69cb-46ee-b2cb-3d5b97fc9e3a
       shortSoundStep1: !<reference.AudioComponent> 9ddaaee8-ea8c-42df-a3fd-5897761911b0
       shortSoundStep2: !<reference.AudioComponent> 2696d07f-0354-4c52-a8dc-0467a247f523
       shortSoundStep3: !<reference.AudioComponent> 80d8f1d0-511f-494f-be35-95ea183146e5
@@ -6249,7 +6322,7 @@
   PrefabRemaps:
     []
   Name: 3/3
-  Enabled: true
+  Enabled: false
   Layers: 1048576
   LocalTransform: !<TransformEntity>
     Position: {x: 0.000000, y: 0.000000, z: 0.000000}
@@ -6341,10 +6414,10 @@
   RawMode: true
   ForceBasic: true
   Anchor:
-    left: -0.949280
-    bottom: -0.989349
-    right: -0.379500
-    top: -0.311694
+    left: -0.955040
+    bottom: -0.733634
+    right: -0.385260
+    top: -0.055979
   Offset:
     left: 0.000000
     bottom: 0.000000
@@ -6387,7 +6460,7 @@
   PrefabRemaps:
     []
   Name: GestureountUI_Final 4
-  Enabled: false
+  Enabled: true
   Layers: 1048576
   LocalTransform: !<TransformEntity>
     Position: {x: 0.000000, y: 0.000000, z: 0.000000}
@@ -6690,7 +6763,7 @@
   PrefabRemaps:
     []
   Name: 1/3
-  Enabled: true
+  Enabled: false
   Layers: 1048576
   LocalTransform: !<TransformEntity>
     Position: {x: 0.000000, y: 0.000000, z: 0.000000}
@@ -6798,9 +6871,9 @@
   ForceBasic: true
   Anchor:
     left: -1.000000
-    bottom: -0.591498
+    bottom: -0.572781
     right: 1.000000
-    top: 0.846072
+    top: 0.939705
   Offset:
     left: 0.000000
     bottom: 0.000000
@@ -6810,7 +6883,7 @@
   PrefabRemaps:
     []
   Name: 2/3
-  Enabled: true
+  Enabled: false
   Layers: 1048576
   LocalTransform: !<TransformEntity>
     Position: {x: 0.000000, y: 0.000000, z: 0.000000}
@@ -6926,7 +6999,7 @@
   PrefabRemaps:
     []
   Name: 3/3
-  Enabled: true
+  Enabled: false
   Layers: 1048576
   LocalTransform: !<TransformEntity>
     Position: {x: 0.000000, y: 0.000000, z: 0.000000}
@@ -6946,7 +7019,7 @@
   Layers: 1048576
   LocalTransform: !<TransformEntity>
     Position: {x: 0.000000, y: 0.000000, z: 0.000000}
-    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Rotation: {x: 0.000000, y: -0.000000, z: 0.000010}
     Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
     HasSegmentScaleCompensation: false
   Children:
@@ -6958,7 +7031,7 @@
   PrefabRemaps:
     []
   Name: 2/3
-  Enabled: true
+  Enabled: false
   Layers: 1048576
   LocalTransform: !<TransformEntity>
     Position: {x: 0.000000, y: 0.000000, z: 0.000000}
@@ -7398,7 +7471,6 @@
     HasSegmentScaleCompensation: false
   Children:
     - !<own> 4d8dcaa3-026f-498c-a7db-ad7aa7152259
-    - !<own> 93d6d4ff-d106-44be-878a-87a895d71564
   Components:
     - !<own> 794ca93a-df72-4a2e-a6b1-52f5ec394f4f
     - !<own> 2064f186-5b0a-4d45-ad02-b45cb041670f
@@ -7508,7 +7580,7 @@
   PrefabRemaps:
     []
   Name: 2/3
-  Enabled: true
+  Enabled: false
   Layers: 1048576
   LocalTransform: !<TransformEntity>
     Position: {x: 0.000000, y: 0.000000, z: 0.000000}
@@ -7744,7 +7816,7 @@
     - fceed71c-4950-4dc6-ada3-bb9b0de6b4fa: 3393bb6b-8e58-4eae-651c-0244a5a0a25a
     - fe508f24-2c03-48c4-88f2-5e5988b22750: 18c15fed-2c8f-43a7-7cc7-0f56d78be724
   Name: HandTrackingJoints
-  Enabled: false
+  Enabled: true
   Layers: 1048576
   LocalTransform: !<TransformEntity>
     Position: {x: 0.000000, y: 0.000000, z: -40.000000}
@@ -7760,7 +7832,7 @@
   PrefabRemaps:
     []
   Name: GestureountUI_Final 1
-  Enabled: false
+  Enabled: true
   Layers: 1048576
   LocalTransform: !<TransformEntity>
     Position: {x: 0.000000, y: 0.000000, z: 0.000000}

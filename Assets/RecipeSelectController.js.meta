@@ -1,20 +1,20 @@
-- !<AssetImportMetadata/f3fac2ea-a174-436e-9cf0-bf393be1dec2>
+- !<AssetImportMetadata/0bcc7135-f920-4db1-a995-22b8d5196721>
   ImportedAssetIds:
-    JavaScriptAsset: !<reference> c84b9955-7d39-484a-9e1d-b50286f328d9
+    JavaScriptAsset: !<reference> 3ab0fd0d-6d9b-4941-904b-aa37c33d0c80
   ImporterName: JavaScriptAssetImporter
-  PrimaryAsset: !<reference> c84b9955-7d39-484a-9e1d-b50286f328d9
+  PrimaryAsset: !<reference> 3ab0fd0d-6d9b-4941-904b-aa37c33d0c80
   PackageType: NotAPackage
   LegacyPackagePolicy: ~
   ExtraData:
     {}
   AssetDataMap:
-    JavaScriptAsset: !<own> 9a6a8126-4133-4654-8457-d829293d2b77
+    JavaScriptAsset: !<own> bb2238e7-2a62-4bd0-80d6-99a276baa06b
   DependentFiles:
     []
   ImporterSettings: !<AssetImporterSettings>
     {}
   CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
-- !<ScriptAssetData/9a6a8126-4133-4654-8457-d829293d2b77>
+- !<ScriptAssetData/bb2238e7-2a62-4bd0-80d6-99a276baa06b>
   SvgIcon: ""
   SetupScript:
     code: ""
@@ -22,15 +22,13 @@
   VersionMajor: 0
   VersionMinor: 0
   VersionPatch: 0
-  ComponentUid: c010d093-d888-4ecb-a8dc-59a51d27aaeb
+  ComponentUid: a2951b86-13e7-4ca1-9f1f-b5ddb5774066
   ExportUid: 00000000-0000-0000-0000-000000000000
   PackagePolicy: CanBeUnpacked
   ScriptInputsHidden:
     ingredientsScreen: false
     mojitoLogicObject: false
-    startButton: false
     startRecipeButton: false
-    startScreen: false
   ScriptTypesHidden:
     {}
   ReadMe: !<reference> 00000000-0000-0000-0000-000000000000
@@ -40,10 +38,8 @@
   Attachments:
     []
   DefaultScriptInputs:
-    - startScreen: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
-      ingredientsScreen: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+    - ingredientsScreen: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
       mojitoLogicObject: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
-      startButton: !<reference.InteractionComponent> 00000000-0000-0000-0000-000000000000
       startRecipeButton: !<reference.InteractionComponent> 00000000-0000-0000-0000-000000000000
   ScriptTypes:
     -

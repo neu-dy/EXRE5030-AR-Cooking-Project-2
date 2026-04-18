@@ -26,6 +26,24 @@
   ExportUid: 00000000-0000-0000-0000-000000000000
   PackagePolicy: CanBeUnpacked
   ScriptInputsHidden:
+    gestureImg1_1: false
+    gestureImg1_2: false
+    gestureImg1_3: false
+    gestureImg2_1: false
+    gestureImg2_2: false
+    gestureImg2_3: false
+    gestureImg3_1: false
+    gestureImg3_2: false
+    gestureImg3_3: false
+    gestureImg4_1: false
+    gestureImg4_2: false
+    gestureImg4_3: false
+    gestureImg5_1: false
+    gestureImg5_2: false
+    gestureImg5_3: false
+    gestureImg6_1: false
+    gestureImg6_2: false
+    gestureImg6_3: false
     gestureLib: false
     loopSoundStep1: false
     loopSoundStep2: false
@@ -33,6 +51,7 @@
     loopSoundStep4: false
     loopSoundStep5: false
     loopSoundStep6: false
+    mascot: false
     recipeCanvas: false
     shortSoundStep1: false
     shortSoundStep2: false
@@ -40,6 +59,12 @@
     shortSoundStep4: false
     shortSoundStep5: false
     shortSoundStep6: false
+    stepAnime1: false
+    stepAnime2: false
+    stepAnime3: false
+    stepAnime4: false
+    stepAnime5: false
+    stepAnimeFinal: false
     successSound: false
     uiFinish: false
     uiStep1: false
@@ -66,6 +91,31 @@
       uiStep5: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
       uiStep6: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
       uiFinish: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      stepAnime1: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      stepAnime2: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      stepAnime3: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      stepAnime4: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      stepAnime5: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      stepAnimeFinal: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      gestureImg1_1: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      gestureImg1_2: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      gestureImg1_3: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      gestureImg2_1: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      gestureImg2_2: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      gestureImg2_3: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      gestureImg3_1: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      gestureImg3_2: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      gestureImg3_3: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      gestureImg4_1: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      gestureImg4_2: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      gestureImg4_3: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      gestureImg5_1: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      gestureImg5_2: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      gestureImg5_3: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      gestureImg6_1: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      gestureImg6_2: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      gestureImg6_3: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      mascot: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
       shortSoundStep1: !<reference.AudioComponent> 00000000-0000-0000-0000-000000000000
       shortSoundStep2: !<reference.AudioComponent> 00000000-0000-0000-0000-000000000000
       shortSoundStep3: !<reference.AudioComponent> 00000000-0000-0000-0000-000000000000

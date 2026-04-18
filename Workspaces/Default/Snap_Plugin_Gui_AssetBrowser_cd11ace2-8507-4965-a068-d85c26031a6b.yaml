@@ -1,7 +1,7 @@
 CollapsedEntities:
   type: stringset
   value:
-    size: 105
+    size: 106
     values:
       - 2D Hand Tracking Joints.lspkg
       - 2D Hand Tracking Joints.lspkg/HandTrackingJoints__PUT_IN_ORTHO_CAM.prefab
@@ -61,6 +61,7 @@ CollapsedEntities:
       - MenuController.js
       - MojitoRecipe.js
       - REF_ONLY_SpectaclesHandGestures.js
+      - RecipeSelectController.js
       - Scene.scene
       - Sounds
       - Sounds/Loops/Sound Effects for AR Cooking 0 Clap Beat.wav
