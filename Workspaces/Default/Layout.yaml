@@ -29,12 +29,8 @@ dock:
           - items:
               - persistentName: Snap.Plugin.Gui.LoggerPanel
                 Uuid: 3205ba20-ad7c-4a6d-b994-c1b40319ba98
-              - persistentName: Snap.Plugin.Gui.ScriptEditor
-                Uuid: 84d7619d-2429-4e5b-a49e-a9aa1a798bfe
-              - persistentName: Com.Snap.LensBasedEditors
-                Uuid: fa279187-0b14-4d7d-8ee7-5c7c4426734a
             type: section
-            current: 2
+            current: 0
         sizes:
           - 365
           - 936
