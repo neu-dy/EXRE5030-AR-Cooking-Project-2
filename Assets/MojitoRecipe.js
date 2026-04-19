@@ -131,7 +131,7 @@ function setGestureEnableForStep(stepIndex) {
     script.gestureLib.enableScoop = false;
 
     if (stepIndex === 1) script.gestureLib.enableChop = true;
-    else if (stepIndex === 2) script.gestureLib.enableScoop = true;
+    else if (stepIndex === 2) script.gestureLib.enableSqueeze = true;
     else if (stepIndex === 3) script.gestureLib.enableChop = true;
     else if (stepIndex === 4) script.gestureLib.enableScoop = true;
     else if (stepIndex === 5) script.gestureLib.enableChop = true;
@@ -142,7 +142,7 @@ function setGestureEnableForStep(stepIndex) {
 
 // -------------------- UI HELPERS --------------------
 function hideAllStepUI() {
-    // 步骤描述
+    // 1. Hide Step Descriptions
     if (script.uiStep1) script.uiStep1.enabled = false;
     if (script.uiStep2) script.uiStep2.enabled = false;
     if (script.uiStep3) script.uiStep3.enabled = false;
@@ -151,13 +151,18 @@ function hideAllStepUI() {
     if (script.uiStep6) script.uiStep6.enabled = false;
     if (script.uiFinish) script.uiFinish.enabled = false;
 
-    // 步骤动画
+    // 2. Hide Step Animations
     if (script.stepAnime1) script.stepAnime1.enabled = false;
     if (script.stepAnime2) script.stepAnime2.enabled = false;
     if (script.stepAnime3) script.stepAnime3.enabled = false;
     if (script.stepAnime4) script.stepAnime4.enabled = false;
     if (script.stepAnime5) script.stepAnime5.enabled = false;
     if (script.stepAnimeFinal) script.stepAnimeFinal.enabled = false;
+
+    // 3. NEW: Hide all Gesture Count Images (1_1, 1_2, etc.)
+    for (var i = 1; i <= 6; i++) {
+        hideAllCountImagesForStep(i);
+    }
 }
 
 function showUIForStep(stepIndex) {
@@ -247,7 +252,7 @@ function updateCountImage(stepIndex, delta) {
 function getCurrentGestureCountForStep(stepIndex) {
     if (!script.gestureLib) return 0;
     if (stepIndex === 1) return script.gestureLib.chopCount || 0;
-    if (stepIndex === 2) return script.gestureLib.scoopCount || 0;
+    if (stepIndex === 2) return script.gestureLib.squeezeCount || 0;
     if (stepIndex === 3) return script.gestureLib.chopCount || 0;
     if (stepIndex === 4) return script.gestureLib.scoopCount || 0;
     if (stepIndex === 5) return script.gestureLib.chopCount || 0;

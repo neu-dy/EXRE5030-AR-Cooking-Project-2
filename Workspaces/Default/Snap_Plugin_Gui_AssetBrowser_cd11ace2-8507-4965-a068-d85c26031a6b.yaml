@@ -1,7 +1,7 @@
 CollapsedEntities:
   type: stringset
   value:
-    size: 106
+    size: 116
     values:
       - 2D Hand Tracking Joints.lspkg
       - 2D Hand Tracking Joints.lspkg/HandTrackingJoints__PUT_IN_ORTHO_CAM.prefab
@@ -19,6 +19,7 @@ CollapsedEntities:
       - 2D Hand Tracking Joints.lspkg/Textures/circle_animation.t3d/atlas_0.jpg
       - 2D Hand Tracking Joints.lspkg/Textures/circle_animation.t3d/circle_animation
       - 2D Hand Tracking Joints.lspkg/package.native
+      - 3D Hand Tracking Assets
       - Cat SFX Pack.lspkg
       - Cat SFX Pack.lspkg/Audio
       - Cat SFX Pack.lspkg/package.native
@@ -42,13 +43,7 @@ CollapsedEntities:
       - ImageMaterial 17.mat
       - ImageMaterial 2.mat
       - ImageMaterial 25.mat
-      - ImageMaterial 26.mat
-      - ImageMaterial 27.mat
-      - ImageMaterial 28.mat
-      - ImageMaterial 29.mat
       - ImageMaterial 3.mat
-      - ImageMaterial 30.mat
-      - ImageMaterial 31.mat
       - ImageMaterial 32.mat
       - ImageMaterial 4.mat
       - ImageMaterial 5.mat
@@ -109,4 +104,19 @@ CollapsedEntities:
       - flat.ss_graph
       - image_unlit.ss_graph
       - psgbl567345t.jpg
+      - s2 squeeze 1.mat
+      - s2 squeeze 2.mat
+      - s2 squeeze 3.mat
+      - step chop1.mat
+      - step chop2.mat
+      - step chop3.mat
+      - step pinch1.mat
+      - step pinch2.mat
+      - step pinch3.mat
+      - step pour 1.mat
+      - step pour 2.mat
+      - step pour 3.mat
+      - step stir1.mat
+      - step stir2.mat
+      - step stir3.mat
   options: 4

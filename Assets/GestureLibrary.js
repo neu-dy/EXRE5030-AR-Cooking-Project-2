@@ -1,7 +1,10 @@
 //@input Component.ObjectTracking objectTracking
-/*
+//@input SceneObject thumbTip
+//@input SceneObject indexTip
+//@input SceneObject middleTip
+//@input SceneObject ringTip
+//@input SceneObject pinkyTip
 
-*/
 // Public counters that RecipeController reads
 
 print("Gesture Library loaded");
@@ -154,14 +157,14 @@ function resetStirState() {
     stirAccumulatedAngle = 0;
 }
 
-/*function avgFingerCurlDistance(thumbTip, indexTip, middleTip, ringTip, pinkyTip) {
+function avgFingerCurlDistance(thumbTip, indexTip, middleTip, ringTip, pinkyTip) {
     var d1 = thumbTip.distance(indexTip);
     var d2 = thumbTip.distance(middleTip);
     var d3 = thumbTip.distance(ringTip);
     var d4 = thumbTip.distance(pinkyTip);
 
     return (d1 + d2 + d3 + d4) / 4.0;
-}*/
+}
 
 // --------------------
 // STARTUP
@@ -218,7 +221,7 @@ script.createEvent("UpdateEvent").bind(function () {
     // --------------------
     // SQUEEZE
     // --------------------
-    /*
+    
     if (script.enableSqueeze) {
         var thumbPos = getJointScreenPos(script.thumbTip);
         var indexPos = getJointScreenPos(script.indexTip);
@@ -254,7 +257,7 @@ script.createEvent("UpdateEvent").bind(function () {
     } else {
         squeezeClosed = false;
         squeezeReady = false;
-    }*/
+    }
 
     if (lastPosition !== null) {
         var delta = pos.sub(lastPosition);
